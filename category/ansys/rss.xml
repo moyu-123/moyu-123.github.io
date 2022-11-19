@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Moyu&#39;s Blog • Posts by &#34;ansys&#34; category</title>
+        <link>http://moyu-123.github.io</link>
+        <description>捷径是最大的弯路。</description>
+        <language>zh-CN</language>
+        <pubDate>Thu, 10 Nov 2022 21:02:54 +0800</pubDate>
+        <lastBuildDate>Thu, 10 Nov 2022 21:02:54 +0800</lastBuildDate>
+        <category>nfc</category>
+        <category>ROS</category>
+        <category>Linux</category>
+        <category>深度相机</category>
+        <category>激光雷达</category>
+        <category>ansys</category>
+        <category>typora</category>
+        <category>OSS</category>
+        <category>office</category>
+        <category>hexo</category>
+        <category>nodejs</category>
+        <category>更改用户名</category>
+        <category>arduino</category>
+        <category>ros</category>
+        <category>深度学习</category>
+        <category>yolo</category>
+        <category>目标检测</category>
+        <category>私有云</category>
+        <category>路由器</category>
+        <item>
+            <guid isPermalink="true">http://moyu-123.github.io/2022/11/10/ansys%E5%AE%89%E8%A3%85/</guid>
+            <title>ansys安装</title>
+            <link>http://moyu-123.github.io/2022/11/10/ansys%E5%AE%89%E8%A3%85/</link>
+            <category>ansys</category>
+            <pubDate>Thu, 10 Nov 2022 21:02:54 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;ansys安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ansys安装&#34;&gt;#&lt;/a&gt; ansys 安装&lt;/h1&gt;
+&lt;h2 id=&#34;1安装前的准备&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1安装前的准备&#34;&gt;#&lt;/a&gt; 1. 安装前的准备&lt;/h2&gt;
+&lt;h3 id=&#34;11-检查用户名是否是中文非中文跳过此步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#11-检查用户名是否是中文非中文跳过此步&#34;&gt;#&lt;/a&gt; 1.1 检查用户名是否是中文（非中文跳过此步）&lt;/h3&gt;
+&lt;p&gt;用户名为中文则需更改用户名，参考&lt;a href=&#34;/2022/11/10/win11%E6%9B%B4%E6%94%B9%E7%94%A8%E6%88%B7%E5%90%8D/&#34; title=&#34;win11更改用户名&#34;&gt;win11更改用户名&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;12-检查安装路径是否有中文&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#12-检查安装路径是否有中文&#34;&gt;#&lt;/a&gt; 1.2 检查安装路径是否有中文&lt;/h3&gt;
+&lt;p&gt;调整路径，不再赘述&lt;/p&gt;
+&lt;h2 id=&#34;2-ansys安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-ansys安装&#34;&gt;#&lt;/a&gt; 2. ansys 安装&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/OL4MYc9FsC_j6AzSeXrMKg&#34;&gt;ANSYS19.2 安装教程 (qq.com)&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Moyu's Blog • All posts by \"nfc\" tag",
+    "description": "捷径是最大的弯路。",
+    "home_page_url": "http://moyu-123.github.io",
+    "items": [
+        {
+            "id": "http://moyu-123.github.io/2022/10/19/nfc%E4%B8%AA%E4%BA%BA%E5%90%8D%E7%89%87%E5%88%B6%E4%BD%9C/",
+            "url": "http://moyu-123.github.io/2022/10/19/nfc%E4%B8%AA%E4%BA%BA%E5%90%8D%E7%89%87%E5%88%B6%E4%BD%9C/",
+            "title": "nfc个人名片制作",
+            "date_published": "2022-10-19T11:10:32.000Z",
+            "content_html": "<h1 id=\"基于nfc的个人名片设计\"><a class=\"markdownIt-Anchor\" href=\"#基于nfc的个人名片设计\">#</a> 基于 NFC 的个人名片设计</h1>\n<h2 id=\"简单介绍\"><a class=\"markdownIt-Anchor\" href=\"#简单介绍\">#</a> 简单介绍：</h2>\n<p>想做一个 nfc 个人名片</p>\n<ul>\n<li>\n<p>NFC：NFC 是 Near Field Communication 的简称，中文全称为近场通信技术，是一种新兴的技术，使用了 NFC 技术的设备（例如移动电话）可以在彼此靠近的情况下进行数据交换。</p>\n</li>\n<li>\n<p>NFC 原理：电磁感应现象，NFC 的发生和接收设备形成了类似空芯变压器，数据接收设备（读取）是初级线圈，NFC 卡片就是次级线圈，而且 NFC 芯片工作电压也是从磁场中获取。（简单理解为磁生电，变化的磁场产生电流。）</p>\n</li>\n<li>\n<p>PBC 设计：需要一些的画电路板的知识，了解原理图。</p>\n<ul>\n<li>基本组成：线圈、芯片、led、电阻、电容</li>\n<li>画图推荐：嘉立创（每月白嫖两次样板）</li>\n<li>成品参考：<a href=\"https://oshwhub.com/explore\">嘉立创开源广场</a>里面有一些大神的成品，可以在此基础上进行设计。</li>\n</ul>\n</li>\n<li>\n<p>制作：</p>\n<ul>\n<li>样板免费打印：<a href=\"https://www.jlc.com/portal/appDownloadsWithConfig.html\">嘉立创下单助手</a></li>\n<li>其他元件某宝购买。</li>\n</ul>\n</li>\n</ul>\n",
+            "tags": [
+                "nfc"
+            ]
+        }
+    ]
+}

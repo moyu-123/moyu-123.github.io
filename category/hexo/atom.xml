@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://moyu-123.github.io</id>
+    <title>Moyu&#39;s Blog • Posts by &#34;hexo&#34; category</title>
+    <link href="http://moyu-123.github.io" />
+    <updated>2022-10-20T16:00:00.000Z</updated>
+    <category term="nfc" />
+    <category term="ROS" />
+    <category term="Linux" />
+    <category term="深度相机" />
+    <category term="激光雷达" />
+    <category term="ansys" />
+    <category term="typora" />
+    <category term="OSS" />
+    <category term="office" />
+    <category term="hexo" />
+    <category term="nodejs" />
+    <category term="更改用户名" />
+    <category term="arduino" />
+    <category term="ros" />
+    <category term="深度学习" />
+    <category term="yolo" />
+    <category term="目标检测" />
+    <category term="私有云" />
+    <category term="路由器" />
+    <entry>
+        <id>http://moyu-123.github.io/2022/10/21/typora+%E9%98%BF%E9%87%8C%E4%BA%91OSS%E6%9C%8D%E5%8A%A1%E9%85%8D%E7%BD%AE%E5%9B%BE%E5%BA%8A/</id>
+        <title>typora+阿里云OSS服务配置图床</title>
+        <link rel="alternate" href="http://moyu-123.github.io/2022/10/21/typora+%E9%98%BF%E9%87%8C%E4%BA%91OSS%E6%9C%8D%E5%8A%A1%E9%85%8D%E7%BD%AE%E5%9B%BE%E5%BA%8A/"/>
+        <content type="html">&lt;h1 id=&#34;typora阿里云oss服务配置图床&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#typora阿里云oss服务配置图床&#34;&gt;#&lt;/a&gt; typora + 阿里云 OSS 服务配置图床&lt;/h1&gt;
+&lt;h2 id=&#34;下载typora&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#下载typora&#34;&gt;#&lt;/a&gt; 下载 typora&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;下载官方 typora，网上有教程，不详细说了（支持正版）。&lt;/li&gt;
+&lt;li&gt;破解版&lt;a href=&#34;http://www.itmind.net/15127.html&#34;&gt; Typora 破解教程 - 2022 年，亲测可用，永久有效 (itmind.net)&lt;/a&gt;(仅供学习使用)。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;阿里云oss服务配置图床&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#阿里云oss服务配置图床&#34;&gt;#&lt;/a&gt; 阿里云 OSS 服务配置图床&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;注册 阿里云账号&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;搜索 OSS&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154657711.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154657711.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023154657711&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击 立即购买（一般选择基础款购买，按需购买即可）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154602544.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154602544.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023154602544&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;购买完成后回到 管理控制台&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154532322.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154532322.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023154532322&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 Bucket 列表 创建 Bucket (其中 地域 选择离自己近的，读写权限 选择 公共读)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154449067.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154449067.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023154449067&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建 Bucket 后，点击自己创建的 Bucket，新建目录&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154300771.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154300771.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023154300771&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154233823.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154233823.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023154233823&#34;&gt;&lt;/p&gt;
+&lt;p&gt;头像–&amp;gt;AccessKey–&amp;gt; 新建 AccessKey，复制保存一下&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154143507.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154143507.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023154143507&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;picgo图片上传插件配置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#picgo图片上传插件配置&#34;&gt;#&lt;/a&gt; PicGo 图片上传插件配置&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;打开 Typora–&amp;gt; 文件–&amp;gt; 偏好设置，进行如下设置，后 打开配置文件&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154036318.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154036318.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023154036318&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154010005.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154010005.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023154010005&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;#将以下内容替换上去，其中 accessKeyId 和 accessKeySecret 是之前保存的，bucket 是你设置的 Bucket 的名字，area 见下图，path 见下图，填完后保存，设置完成。&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;quot;picBed&amp;quot;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &amp;quot;uploader&amp;quot;: &amp;quot;aliyun&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &amp;quot;aliyun&amp;quot;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &amp;quot;accessKeyId&amp;quot;: &amp;quot;&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &amp;quot;accessKeySecret&amp;quot;: &amp;quot;&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &amp;quot;bucket&amp;quot;: &amp;quot;&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &amp;quot;area&amp;quot;: &amp;quot;&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &amp;quot;path&amp;quot;: &amp;quot;&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &amp;quot;customUrl&amp;quot;: &amp;quot;&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &amp;quot;options&amp;quot;: &amp;quot;&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;quot;picgoPlugins&amp;quot;: &amp;#123;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;gt;&amp;#125;	&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023153936337.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023153936337.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023153936337&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023153841771.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023153841771.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023153841771&#34;&gt;&lt;/p&gt;
+&lt;p&gt;参考链接：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV12t4y147Gs/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=9c91ecd867532073046598f6a8b42c64&#34;&gt;2022 年 Typora+PicGo + 阿里云 OSS 服务配置图床保姆级教程_哔哩哔哩_bilibili&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/140004372&#34;&gt;手把手教你实现图片如何自动上传到图床！- 知乎 (zhihu.com)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ghigher1026.gitee.io/2022/07/18/typora%E4%B8%ADPicGo-Core%E6%8F%92%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8/&#34;&gt;typora 中 PicGo-Core 插件的使用 | GHigher’s Blog (gitee.io)&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="typora" />
+        <category term="OSS" />
+        <updated>2022-10-20T16:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://moyu-123.github.io/2022/10/17/%E5%9F%BA%E4%BA%8Egithub%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+        <title>基于github建立个人博客</title>
+        <link rel="alternate" href="http://moyu-123.github.io/2022/10/17/%E5%9F%BA%E4%BA%8Egithub%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+        <content type="html">&lt;h1 id=&#34;基于github建立个人博客&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基于github建立个人博客&#34;&gt;#&lt;/a&gt; 基于 github 建立个人博客&lt;/h1&gt;
+&lt;h2 id=&#34;建立个人博客&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#建立个人博客&#34;&gt;#&lt;/a&gt; 建立个人博客&lt;/h2&gt;
+&lt;p&gt;推荐 b 站视频：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1mU4y1j72n/?spm_id_from=333.1007.top_right_bar_window_default_collection.content.click&amp;amp;vd_source=9c91ecd867532073046598f6a8b42c64&#34;&gt;https://www.bilibili.com/video/BV1mU4y1j72n/?spm_id_from=333.1007.top_right_bar_window_default_collection.content.click&amp;amp;vd_source=9c91ecd867532073046598f6a8b42c64&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;有其他视频教程也可&lt;/p&gt;
+&lt;h2 id=&#34;更换主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#更换主题&#34;&gt;#&lt;/a&gt; 更换主题&lt;/h2&gt;
+&lt;p&gt;主题网站：&lt;br&gt;
+&lt;a href=&#34;https://hexo.io/themes/&#34;&gt;https://hexo.io/themes/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;遇到的问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#遇到的问题&#34;&gt;#&lt;/a&gt; 遇到的问题&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在搭建博客时遇到报错&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162401131.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162401131.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023162401131&#34;&gt;&lt;br&gt;
+ 解决方法：&lt;br&gt;
+&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162426759.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162426759.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023162426759&#34;&gt; (其中 moyu 为 yourname，邮箱更换为自己的邮箱)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建 hexo 时报错&lt;br&gt;
+&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162453830.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162453830.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023162453830&#34;&gt;&lt;br&gt;
+ 错误原因一般是 yml 文件中有重复项，需检查并去掉&lt;br&gt;
+&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162513019.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162513019.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023162513019&#34;&gt;&lt;br&gt;
+ 参考链接：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_43423781/article/details/118892741&#34;&gt;https://blog.csdn.net/weixin_43423781/article/details/118892741&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;hexo 生成静态网址时报错&lt;/p&gt;
+&lt;blockquote&gt;&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;bash：hexo：command not found
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;原因是 nodejs 环境没有配置好&lt;br&gt;
+参考链接：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/qq_36759224/article/details/100411949&#34;&gt;https://blog.csdn.net/qq_36759224/article/details/100411949&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;若 nodejs 版本太低也会遇到问题&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/strawberry_x/article/details/113648770&#34;&gt;nodejs 卸载教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_43411585/article/details/105338333&#34;&gt;nodejs 安装教程&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;hexo 报错&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;error:spawn failed
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;解决方法：&lt;br&gt;
+删除.deploy_git 文件夹&lt;br&gt;
+输入&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git config --global core.autocrlf false
+hexo clean
+hexo g
+hexo d
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="hexo" />
+        <category term="nodejs" />
+        <updated>2022-10-17T13:05:17.000Z</updated>
+    </entry>
+</feed>

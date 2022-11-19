@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Moyu&#39;s Blog • Posts by &#34;激光雷达&#34; tag</title>
+        <link>http://moyu-123.github.io</link>
+        <description>捷径是最大的弯路。</description>
+        <language>zh-CN</language>
+        <pubDate>Mon, 17 Oct 2022 00:00:00 +0800</pubDate>
+        <lastBuildDate>Mon, 17 Oct 2022 00:00:00 +0800</lastBuildDate>
+        <category>nfc</category>
+        <category>ROS</category>
+        <category>Linux</category>
+        <category>深度相机</category>
+        <category>激光雷达</category>
+        <category>ansys</category>
+        <category>typora</category>
+        <category>OSS</category>
+        <category>office</category>
+        <category>hexo</category>
+        <category>nodejs</category>
+        <category>更改用户名</category>
+        <category>arduino</category>
+        <category>ros</category>
+        <category>深度学习</category>
+        <category>yolo</category>
+        <category>目标检测</category>
+        <category>私有云</category>
+        <category>路由器</category>
+        <item>
+            <guid isPermalink="true">http://moyu-123.github.io/2022/10/17/ROS%E4%BD%BF%E7%94%A8%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE/</guid>
+            <title>ROS使用激光雷达</title>
+            <link>http://moyu-123.github.io/2022/10/17/ROS%E4%BD%BF%E7%94%A8%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE/</link>
+            <category>ROS</category>
+            <category>Linux</category>
+            <category>激光雷达</category>
+            <pubDate>Mon, 17 Oct 2022 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;51-使用激光雷达&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#51-使用激光雷达&#34;&gt;#&lt;/a&gt; 5.1 使用激光雷达&lt;/h2&gt;
+&lt;h3 id=&#34;511-建立工作空间并编译或使用现有工作空间&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#511-建立工作空间并编译或使用现有工作空间&#34;&gt;#&lt;/a&gt; 5.1.1 建立工作空间并编译（或使用现有工作空间）&lt;/h3&gt;
+&lt;p&gt;建立工作空间&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mkdir -p ~/Autobot_ws/src
+cd ~/Autobot_ws/src
+git clone https://github.com/robopeak/rplidar_ros.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;返回上级包编译&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd ..
+catkin_make
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;添加环境变量 zsh 下&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;source /Autobot_ws/devel/setup.zsh
+
+或通过~/.zshrc设置环境（建议使用）
+
+echo “source ~/Autobot_ws/devel/setup.zsh” &amp;gt;&amp;gt; ~/.zshrc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;512-配置端口&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#512-配置端口&#34;&gt;#&lt;/a&gt; 5.1.2 配置端口&lt;/h3&gt;
+&lt;p&gt;查看端口权限&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ls -l /dev |grep ttyUSB
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;赋予端口权限&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo chmod a+rw /dev/ttyUSB0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;513-运行测试&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#513-运行测试&#34;&gt;#&lt;/a&gt; 5.1.3 运行测试&lt;/h3&gt;
+&lt;p&gt;打开 roscore (roslaunch 运行也会打开 roscore)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;roscore
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;打开新的终端运行 rplidar 和 rviz&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd ~/Autobot_ws
+source ./devel/setup.zsh
+roslaunch rplidar_ros view_rplidar.launch
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;成功运行图片&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162621266.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162621266.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023162621266&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;514-参考链接&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#514-参考链接&#34;&gt;#&lt;/a&gt; 5.1.4 参考链接&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/robopeak/rplidar_ros&#34;&gt;https://github.com/robopeak/rplidar_ros&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/BAIFOL/article/details/122633384?ops_request_misc=&amp;amp;request_id=&amp;amp;biz_id=102&amp;amp;utm_term=ROS%E4%BD%BF%E7%94%A8%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;amp;utm_medium=distribute.pc_search_result.none-task-blog-2&#34;&gt;https://blog.csdn.net/BAIFOL/article/details/122633384?ops_request_misc=&amp;amp;request_id=&amp;amp;biz_id=102&amp;amp;utm_term=ROS 使用激光雷达 &amp;amp; utm_medium=distribute.pc_search_result.none-task-blog-2&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;515-遇到问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#515-遇到问题&#34;&gt;#&lt;/a&gt; 5.1.5 遇到问题&lt;/h3&gt;
+&lt;p&gt;编译报错&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;error: ‘CV_LOAD_IMAGE_COLOR’ was not declared in this scope
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;解决方法&lt;/p&gt;
+&lt;p&gt;在报错文件中添加头文件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;quot;opencv2/imgcodecs/legacy/constants_c.h&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;编译成功&lt;/p&gt;
+&lt;p&gt;参考链接：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/CxC2333/article/details/107848500?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522166048313116782248511821%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;amp;request_id=166048313116782248511821&amp;amp;biz_id=0&amp;amp;utm_medium=distribute.pc_search_result.none-task-blog-2&#34;&gt;https://blog.csdn.net/CxC2333/article/details/107848500?ops_request_misc=%7B%22request%5Fid%22%3A%22166048313116782248511821%22%2C%22scm%22%3A%2220140713.130102334..%22%7D&amp;amp;request_id=166048313116782248511821&amp;amp;biz_id=0&amp;amp;utm_medium=distribute.pc_search_result.none-task-blog-2&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

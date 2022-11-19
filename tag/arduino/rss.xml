@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Moyu&#39;s Blog • Posts by &#34;arduino&#34; tag</title>
+        <link>http://moyu-123.github.io</link>
+        <description>捷径是最大的弯路。</description>
+        <language>zh-CN</language>
+        <pubDate>Sun, 13 Nov 2022 11:36:16 +0800</pubDate>
+        <lastBuildDate>Sun, 13 Nov 2022 11:36:16 +0800</lastBuildDate>
+        <category>nfc</category>
+        <category>ROS</category>
+        <category>Linux</category>
+        <category>深度相机</category>
+        <category>激光雷达</category>
+        <category>ansys</category>
+        <category>typora</category>
+        <category>OSS</category>
+        <category>office</category>
+        <category>hexo</category>
+        <category>nodejs</category>
+        <category>更改用户名</category>
+        <category>arduino</category>
+        <category>ros</category>
+        <category>深度学习</category>
+        <category>yolo</category>
+        <category>目标检测</category>
+        <category>私有云</category>
+        <category>路由器</category>
+        <item>
+            <guid isPermalink="true">http://moyu-123.github.io/2022/11/13/%E5%9F%BA%E4%BA%8Earduino%E7%9A%84ros%E5%B0%8F%E8%BD%A6/</guid>
+            <title>基于arduino的ros小车</title>
+            <link>http://moyu-123.github.io/2022/11/13/%E5%9F%BA%E4%BA%8Earduino%E7%9A%84ros%E5%B0%8F%E8%BD%A6/</link>
+            <category>arduino</category>
+            <category>ros</category>
+            <pubDate>Sun, 13 Nov 2022 11:36:16 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;基于arduino的ros小车&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基于arduino的ros小车&#34;&gt;#&lt;/a&gt; 基于 arduino 的 ros 小车&lt;/h1&gt;
+&lt;p&gt;学习视频&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1Ub4y1a7PH/?p=1&amp;amp;vd_source=9c91ecd867532073046598f6a8b42c64&#34;&gt;001_引言_机器人平台设计_哔哩哔哩_bilibili&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;1通信&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1通信&#34;&gt;#&lt;/a&gt; 1. 通信&lt;/h2&gt;
+&lt;h3 id=&#34;1上位机与下位机通信管道serialbegin设置波特率通信速率&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1上位机与下位机通信管道serialbegin设置波特率通信速率&#34;&gt;#&lt;/a&gt; 1. 上位机与下位机通信管道 Serial.begin () 设置波特率（通信速率）&lt;/h3&gt;
+&lt;h3 id=&#34;2下位机上位机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2下位机上位机&#34;&gt;#&lt;/a&gt; 2. 下位机 ————&amp;gt; 上位机&lt;/h3&gt;
+&lt;p&gt;Serial.print ();// 打印函数&lt;/p&gt;
+&lt;p&gt;Serial.println ();// 换行打印&lt;/p&gt;
+&lt;h3 id=&#34;3上位机下位机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3上位机下位机&#34;&gt;#&lt;/a&gt; 3. 上位机 ————&amp;gt; 下位机&lt;/h3&gt;
+&lt;p&gt;Serial.avilable ();// 获取传输字节数&lt;/p&gt;
+&lt;p&gt;Serial.read ();// 一次读一个字节&lt;/p&gt;
+&lt;h2 id=&#34;2引脚操作&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2引脚操作&#34;&gt;#&lt;/a&gt; 2. 引脚操作&lt;/h2&gt;
+&lt;p&gt;\1.   设置引脚操作模式&lt;/p&gt;
+&lt;p&gt;pinMode (引脚，INPUT|OUTPUT);&lt;/p&gt;
+&lt;p&gt;\2.   写数据操作&lt;/p&gt;
+&lt;p&gt;digitalWrite (引脚，HIGH|LOW);&lt;/p&gt;
+&lt;p&gt;analogWrite (引脚，PWM 值);// 模拟 IO，通过占空比来控制 LED 灯亮度，PWM 值取 0-255&lt;/p&gt;
+&lt;p&gt;\3.   读数据操作&lt;/p&gt;
+&lt;p&gt;digitalRead (引脚); 返回 HIGH 或 LOW&lt;/p&gt;
+&lt;h2 id=&#34;3时间函数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3时间函数&#34;&gt;#&lt;/a&gt; 3. 时间函数&lt;/h2&gt;
+&lt;p&gt;\1.   delay (毫秒值);// 按照指定参数休眠&lt;/p&gt;
+&lt;p&gt;\2.   millis ();// 返回上一个毫秒值&lt;/p&gt;
+&lt;h2 id=&#34;4中断函数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4中断函数&#34;&gt;#&lt;/a&gt; 4. 中断函数&lt;/h2&gt;
+&lt;h2 id=&#34;5硬件直流减速电机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5硬件直流减速电机&#34;&gt;#&lt;/a&gt; 5. 硬件：直流减速电机&lt;/h2&gt;
+&lt;p&gt;减速箱：减速提高力矩&lt;/p&gt;
+&lt;p&gt;编码器：测速&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113163900590.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113163900590.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221113163900590&#34;&gt;&lt;/p&gt;
+&lt;p&gt;重要参数了解：&lt;/p&gt;
+&lt;p&gt;额定扭矩&lt;/p&gt;
+&lt;p&gt;减速比&lt;/p&gt;
+&lt;p&gt;减速前后转速&lt;/p&gt;
+&lt;p&gt;编码器精度：编码器旋转一圈单相输出的脉冲数&lt;/p&gt;
+&lt;h2 id=&#34;6小车底盘组装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6小车底盘组装&#34;&gt;#&lt;/a&gt; 6. 小车底盘组装&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165136459.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165136459.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221113165136459&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;7串口对应&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7串口对应&#34;&gt;#&lt;/a&gt; 7. 串口对应&lt;/h2&gt;
+&lt;p&gt;arduino 主板&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165324078.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165324078.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221113165324078&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165345076.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165345076.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221113165345076&#34;&gt;&lt;/p&gt;
+&lt;p&gt;arduino—— 电机驱动板 —— 电机对应&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165531529.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165531529.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221113165531529&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165614063.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165614063.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221113165614063&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;8电机测速实现&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#8电机测速实现&#34;&gt;#&lt;/a&gt; 8. 电机测速实现&lt;/h2&gt;
+&lt;h3 id=&#34;81电机测速原理ab相增量式编码器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#81电机测速原理ab相增量式编码器&#34;&gt;#&lt;/a&gt; 8.1 电机测速原理（ab 相增量式编码器）&lt;/h3&gt;
+&lt;p&gt;增量式编码器：将位移（广义）转换成周期性电信号，电信号转变为计数脉冲，用脉冲个数表示位移大小&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113172203664.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113172203664.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221113172203664&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113173056591.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113173056591.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221113173056591&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Moyu's Blog • All posts by \"ansys\" category",
+    "description": "捷径是最大的弯路。",
+    "home_page_url": "http://moyu-123.github.io",
+    "items": [
+        {
+            "id": "http://moyu-123.github.io/2022/11/10/ansys%E5%AE%89%E8%A3%85/",
+            "url": "http://moyu-123.github.io/2022/11/10/ansys%E5%AE%89%E8%A3%85/",
+            "title": "ansys安装",
+            "date_published": "2022-11-10T13:02:54.000Z",
+            "content_html": "<h1 id=\"ansys安装\"><a class=\"markdownIt-Anchor\" href=\"#ansys安装\">#</a> ansys 安装</h1>\n<h2 id=\"1安装前的准备\"><a class=\"markdownIt-Anchor\" href=\"#1安装前的准备\">#</a> 1. 安装前的准备</h2>\n<h3 id=\"11-检查用户名是否是中文非中文跳过此步\"><a class=\"markdownIt-Anchor\" href=\"#11-检查用户名是否是中文非中文跳过此步\">#</a> 1.1 检查用户名是否是中文（非中文跳过此步）</h3>\n<p>用户名为中文则需更改用户名，参考<a href=\"/2022/11/10/win11%E6%9B%B4%E6%94%B9%E7%94%A8%E6%88%B7%E5%90%8D/\" title=\"win11更改用户名\">win11更改用户名</a></p>\n<h3 id=\"12-检查安装路径是否有中文\"><a class=\"markdownIt-Anchor\" href=\"#12-检查安装路径是否有中文\">#</a> 1.2 检查安装路径是否有中文</h3>\n<p>调整路径，不再赘述</p>\n<h2 id=\"2-ansys安装\"><a class=\"markdownIt-Anchor\" href=\"#2-ansys安装\">#</a> 2. ansys 安装</h2>\n<p><a href=\"https://mp.weixin.qq.com/s/OL4MYc9FsC_j6AzSeXrMKg\">ANSYS19.2 安装教程 (qq.com)</a></p>\n",
+            "tags": [
+                "ansys"
+            ]
+        }
+    ]
+}

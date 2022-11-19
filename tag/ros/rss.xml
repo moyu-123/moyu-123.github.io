@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Moyu&#39;s Blog • Posts by &#34;ros&#34; tag</title>
+        <link>http://moyu-123.github.io</link>
+        <description>捷径是最大的弯路。</description>
+        <language>zh-CN</language>
+        <pubDate>Sun, 13 Nov 2022 11:36:16 +0800</pubDate>
+        <lastBuildDate>Sun, 13 Nov 2022 11:36:16 +0800</lastBuildDate>
+        <category>nfc</category>
+        <category>ROS</category>
+        <category>Linux</category>
+        <category>深度相机</category>
+        <category>激光雷达</category>
+        <category>ansys</category>
+        <category>typora</category>
+        <category>OSS</category>
+        <category>office</category>
+        <category>hexo</category>
+        <category>nodejs</category>
+        <category>更改用户名</category>
+        <category>arduino</category>
+        <category>ros</category>
+        <category>深度学习</category>
+        <category>yolo</category>
+        <category>目标检测</category>
+        <category>私有云</category>
+        <category>路由器</category>
+        <item>
+            <guid isPermalink="true">http://moyu-123.github.io/2022/11/13/%E5%9F%BA%E4%BA%8Earduino%E7%9A%84ros%E5%B0%8F%E8%BD%A6/</guid>
+            <title>基于arduino的ros小车</title>
+            <link>http://moyu-123.github.io/2022/11/13/%E5%9F%BA%E4%BA%8Earduino%E7%9A%84ros%E5%B0%8F%E8%BD%A6/</link>
+            <category>arduino</category>
+            <category>ros</category>
+            <pubDate>Sun, 13 Nov 2022 11:36:16 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;基于arduino的ros小车&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基于arduino的ros小车&#34;&gt;#&lt;/a&gt; 基于 arduino 的 ros 小车&lt;/h1&gt;
+&lt;p&gt;学习视频&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1Ub4y1a7PH/?p=1&amp;amp;vd_source=9c91ecd867532073046598f6a8b42c64&#34;&gt;001_引言_机器人平台设计_哔哩哔哩_bilibili&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;1通信&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1通信&#34;&gt;#&lt;/a&gt; 1. 通信&lt;/h2&gt;
+&lt;h3 id=&#34;1上位机与下位机通信管道serialbegin设置波特率通信速率&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1上位机与下位机通信管道serialbegin设置波特率通信速率&#34;&gt;#&lt;/a&gt; 1. 上位机与下位机通信管道 Serial.begin () 设置波特率（通信速率）&lt;/h3&gt;
+&lt;h3 id=&#34;2下位机上位机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2下位机上位机&#34;&gt;#&lt;/a&gt; 2. 下位机 ————&amp;gt; 上位机&lt;/h3&gt;
+&lt;p&gt;Serial.print ();// 打印函数&lt;/p&gt;
+&lt;p&gt;Serial.println ();// 换行打印&lt;/p&gt;
+&lt;h3 id=&#34;3上位机下位机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3上位机下位机&#34;&gt;#&lt;/a&gt; 3. 上位机 ————&amp;gt; 下位机&lt;/h3&gt;
+&lt;p&gt;Serial.avilable ();// 获取传输字节数&lt;/p&gt;
+&lt;p&gt;Serial.read ();// 一次读一个字节&lt;/p&gt;
+&lt;h2 id=&#34;2引脚操作&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2引脚操作&#34;&gt;#&lt;/a&gt; 2. 引脚操作&lt;/h2&gt;
+&lt;p&gt;\1.   设置引脚操作模式&lt;/p&gt;
+&lt;p&gt;pinMode (引脚，INPUT|OUTPUT);&lt;/p&gt;
+&lt;p&gt;\2.   写数据操作&lt;/p&gt;
+&lt;p&gt;digitalWrite (引脚，HIGH|LOW);&lt;/p&gt;
+&lt;p&gt;analogWrite (引脚，PWM 值);// 模拟 IO，通过占空比来控制 LED 灯亮度，PWM 值取 0-255&lt;/p&gt;
+&lt;p&gt;\3.   读数据操作&lt;/p&gt;
+&lt;p&gt;digitalRead (引脚); 返回 HIGH 或 LOW&lt;/p&gt;
+&lt;h2 id=&#34;3时间函数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3时间函数&#34;&gt;#&lt;/a&gt; 3. 时间函数&lt;/h2&gt;
+&lt;p&gt;\1.   delay (毫秒值);// 按照指定参数休眠&lt;/p&gt;
+&lt;p&gt;\2.   millis ();// 返回上一个毫秒值&lt;/p&gt;
+&lt;h2 id=&#34;4中断函数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4中断函数&#34;&gt;#&lt;/a&gt; 4. 中断函数&lt;/h2&gt;
+&lt;h2 id=&#34;5硬件直流减速电机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5硬件直流减速电机&#34;&gt;#&lt;/a&gt; 5. 硬件：直流减速电机&lt;/h2&gt;
+&lt;p&gt;减速箱：减速提高力矩&lt;/p&gt;
+&lt;p&gt;编码器：测速&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113163900590.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113163900590.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221113163900590&#34;&gt;&lt;/p&gt;
+&lt;p&gt;重要参数了解：&lt;/p&gt;
+&lt;p&gt;额定扭矩&lt;/p&gt;
+&lt;p&gt;减速比&lt;/p&gt;
+&lt;p&gt;减速前后转速&lt;/p&gt;
+&lt;p&gt;编码器精度：编码器旋转一圈单相输出的脉冲数&lt;/p&gt;
+&lt;h2 id=&#34;6小车底盘组装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6小车底盘组装&#34;&gt;#&lt;/a&gt; 6. 小车底盘组装&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165136459.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165136459.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221113165136459&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;7串口对应&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7串口对应&#34;&gt;#&lt;/a&gt; 7. 串口对应&lt;/h2&gt;
+&lt;p&gt;arduino 主板&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165324078.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165324078.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221113165324078&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165345076.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165345076.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221113165345076&#34;&gt;&lt;/p&gt;
+&lt;p&gt;arduino—— 电机驱动板 —— 电机对应&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165531529.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165531529.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221113165531529&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165614063.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165614063.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221113165614063&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;8电机测速实现&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#8电机测速实现&#34;&gt;#&lt;/a&gt; 8. 电机测速实现&lt;/h2&gt;
+&lt;h3 id=&#34;81电机测速原理ab相增量式编码器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#81电机测速原理ab相增量式编码器&#34;&gt;#&lt;/a&gt; 8.1 电机测速原理（ab 相增量式编码器）&lt;/h3&gt;
+&lt;p&gt;增量式编码器：将位移（广义）转换成周期性电信号，电信号转变为计数脉冲，用脉冲个数表示位移大小&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113172203664.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113172203664.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221113172203664&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113173056591.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113173056591.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221113173056591&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://moyu-123.github.io/2022/10/19/ROS%E6%B7%B1%E5%BA%A6%E7%9B%B8%E6%9C%BA/</guid>
+            <title>ROS使用深度相机</title>
+            <link>http://moyu-123.github.io/2022/10/19/ROS%E6%B7%B1%E5%BA%A6%E7%9B%B8%E6%9C%BA/</link>
+            <category>ROS</category>
+            <category>Linux</category>
+            <category>深度相机</category>
+            <pubDate>Wed, 19 Oct 2022 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;52-使用realsense相机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#52-使用realsense相机&#34;&gt;#&lt;/a&gt; 5.2 使用 RealSense 相机&lt;/h2&gt;
+&lt;h3 id=&#34;521-安装realsensesdk&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#521-安装realsensesdk&#34;&gt;#&lt;/a&gt; 5.2.1 安装 RealSenseSDK&lt;/h3&gt;
+&lt;p&gt;安装 realsenseSDK 用于调整深度相机参数（包括亮度、曝光、白平衡等）&lt;/p&gt;
+&lt;p&gt;安装方法一（通过命令行安装）：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/Microsoft/vcpkg.git
+cd vcpkg
+./bootstrap-vcpkg.sh
+./vcpkg integrate install
+./vcpkg install realsense2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;安装方法二（已有安装包，通过安装包安装）：&lt;/p&gt;
+&lt;h3 id=&#34;522-安装realsense2_camera&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#522-安装realsense2_camera&#34;&gt;#&lt;/a&gt; 5.2.2 安装 realsense2_camera&lt;/h3&gt;
+&lt;p&gt;方法一：&lt;br&gt;
+ubuntu 下&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install ros-$ROS_DISTRO-realsense2-camera
+sudo apt-get install ros-$ROS_DISTRO-realsense2-description
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;详细 ros 版本要依据自己的更改，如 Ubuntu20.04 即为：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install ros-noetic-realsense2-camera
+sudo apt-get install ros-noetic-realsense2-description
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;方法二：&lt;/p&gt;
+&lt;p&gt;一、安装 sdk（参考 5.2.1）&lt;/p&gt;
+&lt;p&gt;二、安装 ros 包&lt;/p&gt;
+&lt;p&gt;新建工作空间&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/src/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;克隆到 src 文件夹下&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/IntelRealSense/realsense-ros.git
+cd realsense-ros/
+git checkout `git tag | sort -V | grep -P &amp;quot;^2.\d+\.\d+&amp;quot; | tail -1`
+cd ..
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;初始化工作空间&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;catkin_init_workspace
+cd ..
+catkin_make clean
+catkin_make -DCATKIN_ENABLE_TESTING=False -DCMAKE_BUILD_TYPE=Release
+catkin_make install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;配置环境变量&lt;/p&gt;
+&lt;p&gt;bash&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;echo &amp;quot;source ~/catkin_ws/devel/setup.bash&amp;quot; &amp;gt;&amp;gt; ~/.bashrc
+source ~/.bashrc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;zsh&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;echo &amp;quot;source ~/catkin_ws/devel/setup.zsh&amp;quot; &amp;gt;&amp;gt; ~/.zshrc
+source ~/.zshrc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;523-试运行ros节点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#523-试运行ros节点&#34;&gt;#&lt;/a&gt; 5.2.3 试运行 ros 节点&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;roslaunch realsense2_camera rs_camera.launch
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;524-参考链接&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#524-参考链接&#34;&gt;#&lt;/a&gt; 5.2.4 参考链接&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/IntelRealSense/realsense-ros&#34;&gt;https://github.com/IntelRealSense/realsense-ros&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/IntelRealSense/librealsense&#34;&gt;https://github.com/IntelRealSense/librealsense&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://moyu-123.github.io/2022/10/17/ROS%E4%BD%BF%E7%94%A8%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE/</guid>
+            <title>ROS使用激光雷达</title>
+            <link>http://moyu-123.github.io/2022/10/17/ROS%E4%BD%BF%E7%94%A8%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE/</link>
+            <category>ROS</category>
+            <category>Linux</category>
+            <category>激光雷达</category>
+            <pubDate>Mon, 17 Oct 2022 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;51-使用激光雷达&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#51-使用激光雷达&#34;&gt;#&lt;/a&gt; 5.1 使用激光雷达&lt;/h2&gt;
+&lt;h3 id=&#34;511-建立工作空间并编译或使用现有工作空间&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#511-建立工作空间并编译或使用现有工作空间&#34;&gt;#&lt;/a&gt; 5.1.1 建立工作空间并编译（或使用现有工作空间）&lt;/h3&gt;
+&lt;p&gt;建立工作空间&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mkdir -p ~/Autobot_ws/src
+cd ~/Autobot_ws/src
+git clone https://github.com/robopeak/rplidar_ros.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;返回上级包编译&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd ..
+catkin_make
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;添加环境变量 zsh 下&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;source /Autobot_ws/devel/setup.zsh
+
+或通过~/.zshrc设置环境（建议使用）
+
+echo “source ~/Autobot_ws/devel/setup.zsh” &amp;gt;&amp;gt; ~/.zshrc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;512-配置端口&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#512-配置端口&#34;&gt;#&lt;/a&gt; 5.1.2 配置端口&lt;/h3&gt;
+&lt;p&gt;查看端口权限&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ls -l /dev |grep ttyUSB
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;赋予端口权限&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo chmod a+rw /dev/ttyUSB0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;513-运行测试&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#513-运行测试&#34;&gt;#&lt;/a&gt; 5.1.3 运行测试&lt;/h3&gt;
+&lt;p&gt;打开 roscore (roslaunch 运行也会打开 roscore)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;roscore
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;打开新的终端运行 rplidar 和 rviz&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd ~/Autobot_ws
+source ./devel/setup.zsh
+roslaunch rplidar_ros view_rplidar.launch
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;成功运行图片&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162621266.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162621266.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023162621266&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;514-参考链接&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#514-参考链接&#34;&gt;#&lt;/a&gt; 5.1.4 参考链接&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/robopeak/rplidar_ros&#34;&gt;https://github.com/robopeak/rplidar_ros&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/BAIFOL/article/details/122633384?ops_request_misc=&amp;amp;request_id=&amp;amp;biz_id=102&amp;amp;utm_term=ROS%E4%BD%BF%E7%94%A8%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;amp;utm_medium=distribute.pc_search_result.none-task-blog-2&#34;&gt;https://blog.csdn.net/BAIFOL/article/details/122633384?ops_request_misc=&amp;amp;request_id=&amp;amp;biz_id=102&amp;amp;utm_term=ROS 使用激光雷达 &amp;amp; utm_medium=distribute.pc_search_result.none-task-blog-2&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;515-遇到问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#515-遇到问题&#34;&gt;#&lt;/a&gt; 5.1.5 遇到问题&lt;/h3&gt;
+&lt;p&gt;编译报错&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;error: ‘CV_LOAD_IMAGE_COLOR’ was not declared in this scope
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;解决方法&lt;/p&gt;
+&lt;p&gt;在报错文件中添加头文件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;quot;opencv2/imgcodecs/legacy/constants_c.h&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;编译成功&lt;/p&gt;
+&lt;p&gt;参考链接：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/CxC2333/article/details/107848500?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522166048313116782248511821%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;amp;request_id=166048313116782248511821&amp;amp;biz_id=0&amp;amp;utm_medium=distribute.pc_search_result.none-task-blog-2&#34;&gt;https://blog.csdn.net/CxC2333/article/details/107848500?ops_request_misc=%7B%22request%5Fid%22%3A%22166048313116782248511821%22%2C%22scm%22%3A%2220140713.130102334..%22%7D&amp;amp;request_id=166048313116782248511821&amp;amp;biz_id=0&amp;amp;utm_medium=distribute.pc_search_result.none-task-blog-2&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Moyu's Blog • All posts by \"office\" tag",
+    "description": "捷径是最大的弯路。",
+    "home_page_url": "http://moyu-123.github.io",
+    "items": [
+        {
+            "id": "http://moyu-123.github.io/2022/11/19/word%E6%97%A0%E6%B3%95%E5%88%9B%E5%BB%BA%E5%B7%A5%E4%BD%9C%E6%96%87%E4%BB%B6/",
+            "url": "http://moyu-123.github.io/2022/11/19/word%E6%97%A0%E6%B3%95%E5%88%9B%E5%BB%BA%E5%B7%A5%E4%BD%9C%E6%96%87%E4%BB%B6/",
+            "title": "word无法创建工作文件",
+            "date_published": "2022-11-19T13:53:49.000Z",
+            "content_html": "<h1 id=\"word无法创建工作文件请检查临时环境变量的解决方法\"><a class=\"markdownIt-Anchor\" href=\"#word无法创建工作文件请检查临时环境变量的解决方法\">#</a> word 无法创建工作文件，请检查临时环境变量的解决方法</h1>\n<h2 id=\"1问题\"><a class=\"markdownIt-Anchor\" href=\"#1问题\">#</a> 1. 问题</h2>\n<p><img src=\"https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119215708055.png\" class=\"lazyload placeholder\" data-srcset=\"https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119215708055.png\" srcset=\"https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp\" alt=\"image-20221119215708055\"></p>\n<h2 id=\"2解决方法\"><a class=\"markdownIt-Anchor\" href=\"#2解决方法\">#</a> 2. 解决方法</h2>\n<ul>\n<li>\n<p>新建一个文件夹（我在 E 盘新建一个 TempFile 文件夹，路径：E:\\TempFile），作为临时文件储存点。</p>\n</li>\n<li>\n<p>更改环境变量（四处）</p>\n<p><img src=\"https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119220147158.png\" class=\"lazyload placeholder\" data-srcset=\"https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119220147158.png\" srcset=\"https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp\" alt=\"image-20221119220147158\"></p>\n<p>更改如图四个环境变量为之前设置的文件夹路径</p>\n</li>\n<li>\n<p>更改注册表（两处）</p>\n<p>第一处</p>\n<p><img src=\"https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119220653328.png\" class=\"lazyload placeholder\" data-srcset=\"https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119220653328.png\" srcset=\"https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp\" alt=\"image-20221119220653328\"></p>\n<p>查看当前用户</p>\n<p><img src=\"https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119221508569.png\" class=\"lazyload placeholder\" data-srcset=\"https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119221508569.png\" srcset=\"https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp\" alt=\"image-20221119221508569\"></p>\n<p>第二处（根据所查到的用户名信息调整路径）</p>\n<p><img src=\"https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119221118575.png\" class=\"lazyload placeholder\" data-srcset=\"https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119221118575.png\" srcset=\"https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp\" alt=\"image-20221119221118575\"></p>\n</li>\n</ul>\n",
+            "tags": [
+                "office"
+            ]
+        }
+    ]
+}

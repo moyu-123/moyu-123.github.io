@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Moyu's Blog • All posts by \"更改用户名\" tag",
+    "description": "捷径是最大的弯路。",
+    "home_page_url": "http://moyu-123.github.io",
+    "items": [
+        {
+            "id": "http://moyu-123.github.io/2022/11/10/win11%E6%9B%B4%E6%94%B9%E7%94%A8%E6%88%B7%E5%90%8D/",
+            "url": "http://moyu-123.github.io/2022/11/10/win11%E6%9B%B4%E6%94%B9%E7%94%A8%E6%88%B7%E5%90%8D/",
+            "title": "win11更改用户名",
+            "date_published": "2022-11-10T13:10:29.000Z",
+            "content_html": "<h1 id=\"更改用户名\"><a class=\"markdownIt-Anchor\" href=\"#更改用户名\">#</a> 更改用户名</h1>\n<h2 id=\"1创建还原点\"><a class=\"markdownIt-Anchor\" href=\"#1创建还原点\">#</a> 1. 创建还原点</h2>\n<p><img src=\"https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221110211425369.png\" class=\"lazyload placeholder\" data-srcset=\"https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221110211425369.png\" srcset=\"https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp\" alt=\"image-20221110211425369\"></p>\n<p>启用系统保护，调整使用量，创建还原点。</p>\n<p><img src=\"https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221110212408502.png\" class=\"lazyload placeholder\" data-srcset=\"https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221110212408502.png\" srcset=\"https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp\" alt=\"image-20221110212408502\"></p>\n<ul>\n<li>注：要清除之前的还原点，可以禁用 c 盘系统保护，则删除所有盘还原点。</li>\n</ul>\n<h2 id=\"2更换用户名\"><a class=\"markdownIt-Anchor\" href=\"#2更换用户名\">#</a> 2. 更换用户名</h2>\n<p>更换用户名可自行寻找网上教程，也可参照<a href=\"https://zhuanlan.zhihu.com/p/440768641\"> win11 修改用户名（超详细图文） - 知乎 (zhihu.com)</a></p>\n",
+            "tags": [
+                "更改用户名"
+            ]
+        }
+    ]
+}

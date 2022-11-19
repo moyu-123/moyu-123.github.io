@@ -1,0 +1,577 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Moyu&#39;s Blog</title>
+        <link>http://moyu-123.github.io</link>
+        <description>捷径是最大的弯路。</description>
+        <language>zh-CN</language>
+        <pubDate>Sat, 19 Nov 2022 21:53:49 +0800</pubDate>
+        <lastBuildDate>Sat, 19 Nov 2022 21:53:49 +0800</lastBuildDate>
+        <category>nfc</category>
+        <category>ROS</category>
+        <category>Linux</category>
+        <category>深度相机</category>
+        <category>激光雷达</category>
+        <category>ansys</category>
+        <category>typora</category>
+        <category>OSS</category>
+        <category>office</category>
+        <category>hexo</category>
+        <category>nodejs</category>
+        <category>更改用户名</category>
+        <category>arduino</category>
+        <category>ros</category>
+        <category>深度学习</category>
+        <category>yolo</category>
+        <category>目标检测</category>
+        <category>私有云</category>
+        <category>路由器</category>
+        <item>
+            <guid isPermalink="true">http://moyu-123.github.io/2022/11/19/word%E6%97%A0%E6%B3%95%E5%88%9B%E5%BB%BA%E5%B7%A5%E4%BD%9C%E6%96%87%E4%BB%B6/</guid>
+            <title>word无法创建工作文件</title>
+            <link>http://moyu-123.github.io/2022/11/19/word%E6%97%A0%E6%B3%95%E5%88%9B%E5%BB%BA%E5%B7%A5%E4%BD%9C%E6%96%87%E4%BB%B6/</link>
+            <category>office</category>
+            <pubDate>Sat, 19 Nov 2022 21:53:49 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;word无法创建工作文件请检查临时环境变量的解决方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#word无法创建工作文件请检查临时环境变量的解决方法&#34;&gt;#&lt;/a&gt; word 无法创建工作文件，请检查临时环境变量的解决方法&lt;/h1&gt;
+&lt;h2 id=&#34;1问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1问题&#34;&gt;#&lt;/a&gt; 1. 问题&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119215708055.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119215708055.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221119215708055&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2解决方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2解决方法&#34;&gt;#&lt;/a&gt; 2. 解决方法&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;新建一个文件夹（我在 E 盘新建一个 TempFile 文件夹，路径：E:\TempFile），作为临时文件储存点。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;更改环境变量（四处）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119220147158.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119220147158.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221119220147158&#34;&gt;&lt;/p&gt;
+&lt;p&gt;更改如图四个环境变量为之前设置的文件夹路径&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;更改注册表（两处）&lt;/p&gt;
+&lt;p&gt;第一处&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119220653328.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119220653328.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221119220653328&#34;&gt;&lt;/p&gt;
+&lt;p&gt;查看当前用户&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119221508569.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119221508569.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221119221508569&#34;&gt;&lt;/p&gt;
+&lt;p&gt;第二处（根据所查到的用户名信息调整路径）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119221118575.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119221118575.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221119221118575&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://moyu-123.github.io/2022/11/13/%E5%9F%BA%E4%BA%8Earduino%E7%9A%84ros%E5%B0%8F%E8%BD%A6/</guid>
+            <title>基于arduino的ros小车</title>
+            <link>http://moyu-123.github.io/2022/11/13/%E5%9F%BA%E4%BA%8Earduino%E7%9A%84ros%E5%B0%8F%E8%BD%A6/</link>
+            <category>arduino</category>
+            <category>ros</category>
+            <pubDate>Sun, 13 Nov 2022 11:36:16 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;基于arduino的ros小车&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基于arduino的ros小车&#34;&gt;#&lt;/a&gt; 基于 arduino 的 ros 小车&lt;/h1&gt;
+&lt;p&gt;学习视频&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1Ub4y1a7PH/?p=1&amp;amp;vd_source=9c91ecd867532073046598f6a8b42c64&#34;&gt;001_引言_机器人平台设计_哔哩哔哩_bilibili&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;1通信&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1通信&#34;&gt;#&lt;/a&gt; 1. 通信&lt;/h2&gt;
+&lt;h3 id=&#34;1上位机与下位机通信管道serialbegin设置波特率通信速率&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1上位机与下位机通信管道serialbegin设置波特率通信速率&#34;&gt;#&lt;/a&gt; 1. 上位机与下位机通信管道 Serial.begin () 设置波特率（通信速率）&lt;/h3&gt;
+&lt;h3 id=&#34;2下位机上位机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2下位机上位机&#34;&gt;#&lt;/a&gt; 2. 下位机 ————&amp;gt; 上位机&lt;/h3&gt;
+&lt;p&gt;Serial.print ();// 打印函数&lt;/p&gt;
+&lt;p&gt;Serial.println ();// 换行打印&lt;/p&gt;
+&lt;h3 id=&#34;3上位机下位机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3上位机下位机&#34;&gt;#&lt;/a&gt; 3. 上位机 ————&amp;gt; 下位机&lt;/h3&gt;
+&lt;p&gt;Serial.avilable ();// 获取传输字节数&lt;/p&gt;
+&lt;p&gt;Serial.read ();// 一次读一个字节&lt;/p&gt;
+&lt;h2 id=&#34;2引脚操作&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2引脚操作&#34;&gt;#&lt;/a&gt; 2. 引脚操作&lt;/h2&gt;
+&lt;p&gt;\1.   设置引脚操作模式&lt;/p&gt;
+&lt;p&gt;pinMode (引脚，INPUT|OUTPUT);&lt;/p&gt;
+&lt;p&gt;\2.   写数据操作&lt;/p&gt;
+&lt;p&gt;digitalWrite (引脚，HIGH|LOW);&lt;/p&gt;
+&lt;p&gt;analogWrite (引脚，PWM 值);// 模拟 IO，通过占空比来控制 LED 灯亮度，PWM 值取 0-255&lt;/p&gt;
+&lt;p&gt;\3.   读数据操作&lt;/p&gt;
+&lt;p&gt;digitalRead (引脚); 返回 HIGH 或 LOW&lt;/p&gt;
+&lt;h2 id=&#34;3时间函数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3时间函数&#34;&gt;#&lt;/a&gt; 3. 时间函数&lt;/h2&gt;
+&lt;p&gt;\1.   delay (毫秒值);// 按照指定参数休眠&lt;/p&gt;
+&lt;p&gt;\2.   millis ();// 返回上一个毫秒值&lt;/p&gt;
+&lt;h2 id=&#34;4中断函数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4中断函数&#34;&gt;#&lt;/a&gt; 4. 中断函数&lt;/h2&gt;
+&lt;h2 id=&#34;5硬件直流减速电机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5硬件直流减速电机&#34;&gt;#&lt;/a&gt; 5. 硬件：直流减速电机&lt;/h2&gt;
+&lt;p&gt;减速箱：减速提高力矩&lt;/p&gt;
+&lt;p&gt;编码器：测速&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113163900590.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113163900590.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221113163900590&#34;&gt;&lt;/p&gt;
+&lt;p&gt;重要参数了解：&lt;/p&gt;
+&lt;p&gt;额定扭矩&lt;/p&gt;
+&lt;p&gt;减速比&lt;/p&gt;
+&lt;p&gt;减速前后转速&lt;/p&gt;
+&lt;p&gt;编码器精度：编码器旋转一圈单相输出的脉冲数&lt;/p&gt;
+&lt;h2 id=&#34;6小车底盘组装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6小车底盘组装&#34;&gt;#&lt;/a&gt; 6. 小车底盘组装&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165136459.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165136459.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221113165136459&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;7串口对应&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7串口对应&#34;&gt;#&lt;/a&gt; 7. 串口对应&lt;/h2&gt;
+&lt;p&gt;arduino 主板&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165324078.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165324078.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221113165324078&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165345076.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165345076.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221113165345076&#34;&gt;&lt;/p&gt;
+&lt;p&gt;arduino—— 电机驱动板 —— 电机对应&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165531529.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165531529.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221113165531529&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165614063.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113165614063.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221113165614063&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;8电机测速实现&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#8电机测速实现&#34;&gt;#&lt;/a&gt; 8. 电机测速实现&lt;/h2&gt;
+&lt;h3 id=&#34;81电机测速原理ab相增量式编码器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#81电机测速原理ab相增量式编码器&#34;&gt;#&lt;/a&gt; 8.1 电机测速原理（ab 相增量式编码器）&lt;/h3&gt;
+&lt;p&gt;增量式编码器：将位移（广义）转换成周期性电信号，电信号转变为计数脉冲，用脉冲个数表示位移大小&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113172203664.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113172203664.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221113172203664&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113173056591.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221113173056591.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221113173056591&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://moyu-123.github.io/2022/11/10/win11%E6%9B%B4%E6%94%B9%E7%94%A8%E6%88%B7%E5%90%8D/</guid>
+            <title>win11更改用户名</title>
+            <link>http://moyu-123.github.io/2022/11/10/win11%E6%9B%B4%E6%94%B9%E7%94%A8%E6%88%B7%E5%90%8D/</link>
+            <category>更改用户名</category>
+            <pubDate>Thu, 10 Nov 2022 21:10:29 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;更改用户名&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#更改用户名&#34;&gt;#&lt;/a&gt; 更改用户名&lt;/h1&gt;
+&lt;h2 id=&#34;1创建还原点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1创建还原点&#34;&gt;#&lt;/a&gt; 1. 创建还原点&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221110211425369.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221110211425369.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221110211425369&#34;&gt;&lt;/p&gt;
+&lt;p&gt;启用系统保护，调整使用量，创建还原点。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221110212408502.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221110212408502.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221110212408502&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;注：要清除之前的还原点，可以禁用 c 盘系统保护，则删除所有盘还原点。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2更换用户名&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2更换用户名&#34;&gt;#&lt;/a&gt; 2. 更换用户名&lt;/h2&gt;
+&lt;p&gt;更换用户名可自行寻找网上教程，也可参照&lt;a href=&#34;https://zhuanlan.zhihu.com/p/440768641&#34;&gt; win11 修改用户名（超详细图文） - 知乎 (zhihu.com)&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://moyu-123.github.io/2022/11/10/ansys%E5%AE%89%E8%A3%85/</guid>
+            <title>ansys安装</title>
+            <link>http://moyu-123.github.io/2022/11/10/ansys%E5%AE%89%E8%A3%85/</link>
+            <category>ansys</category>
+            <pubDate>Thu, 10 Nov 2022 21:02:54 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;ansys安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ansys安装&#34;&gt;#&lt;/a&gt; ansys 安装&lt;/h1&gt;
+&lt;h2 id=&#34;1安装前的准备&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1安装前的准备&#34;&gt;#&lt;/a&gt; 1. 安装前的准备&lt;/h2&gt;
+&lt;h3 id=&#34;11-检查用户名是否是中文非中文跳过此步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#11-检查用户名是否是中文非中文跳过此步&#34;&gt;#&lt;/a&gt; 1.1 检查用户名是否是中文（非中文跳过此步）&lt;/h3&gt;
+&lt;p&gt;用户名为中文则需更改用户名，参考&lt;a href=&#34;/2022/11/10/win11%E6%9B%B4%E6%94%B9%E7%94%A8%E6%88%B7%E5%90%8D/&#34; title=&#34;win11更改用户名&#34;&gt;win11更改用户名&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;12-检查安装路径是否有中文&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#12-检查安装路径是否有中文&#34;&gt;#&lt;/a&gt; 1.2 检查安装路径是否有中文&lt;/h3&gt;
+&lt;p&gt;调整路径，不再赘述&lt;/p&gt;
+&lt;h2 id=&#34;2-ansys安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-ansys安装&#34;&gt;#&lt;/a&gt; 2. ansys 安装&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/OL4MYc9FsC_j6AzSeXrMKg&#34;&gt;ANSYS19.2 安装教程 (qq.com)&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://moyu-123.github.io/2022/10/21/typora+%E9%98%BF%E9%87%8C%E4%BA%91OSS%E6%9C%8D%E5%8A%A1%E9%85%8D%E7%BD%AE%E5%9B%BE%E5%BA%8A/</guid>
+            <title>typora+阿里云OSS服务配置图床</title>
+            <link>http://moyu-123.github.io/2022/10/21/typora+%E9%98%BF%E9%87%8C%E4%BA%91OSS%E6%9C%8D%E5%8A%A1%E9%85%8D%E7%BD%AE%E5%9B%BE%E5%BA%8A/</link>
+            <category>typora</category>
+            <category>OSS</category>
+            <pubDate>Fri, 21 Oct 2022 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;typora阿里云oss服务配置图床&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#typora阿里云oss服务配置图床&#34;&gt;#&lt;/a&gt; typora + 阿里云 OSS 服务配置图床&lt;/h1&gt;
+&lt;h2 id=&#34;下载typora&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#下载typora&#34;&gt;#&lt;/a&gt; 下载 typora&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;下载官方 typora，网上有教程，不详细说了（支持正版）。&lt;/li&gt;
+&lt;li&gt;破解版&lt;a href=&#34;http://www.itmind.net/15127.html&#34;&gt; Typora 破解教程 - 2022 年，亲测可用，永久有效 (itmind.net)&lt;/a&gt;(仅供学习使用)。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;阿里云oss服务配置图床&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#阿里云oss服务配置图床&#34;&gt;#&lt;/a&gt; 阿里云 OSS 服务配置图床&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;注册 阿里云账号&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;搜索 OSS&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154657711.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154657711.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023154657711&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击 立即购买（一般选择基础款购买，按需购买即可）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154602544.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154602544.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023154602544&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;购买完成后回到 管理控制台&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154532322.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154532322.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023154532322&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 Bucket 列表 创建 Bucket (其中 地域 选择离自己近的，读写权限 选择 公共读)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154449067.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154449067.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023154449067&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建 Bucket 后，点击自己创建的 Bucket，新建目录&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154300771.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154300771.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023154300771&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154233823.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154233823.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023154233823&#34;&gt;&lt;/p&gt;
+&lt;p&gt;头像–&amp;gt;AccessKey–&amp;gt; 新建 AccessKey，复制保存一下&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154143507.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154143507.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023154143507&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;picgo图片上传插件配置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#picgo图片上传插件配置&#34;&gt;#&lt;/a&gt; PicGo 图片上传插件配置&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;打开 Typora–&amp;gt; 文件–&amp;gt; 偏好设置，进行如下设置，后 打开配置文件&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154036318.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154036318.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023154036318&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154010005.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023154010005.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023154010005&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;#将以下内容替换上去，其中 accessKeyId 和 accessKeySecret 是之前保存的，bucket 是你设置的 Bucket 的名字，area 见下图，path 见下图，填完后保存，设置完成。&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;quot;picBed&amp;quot;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &amp;quot;uploader&amp;quot;: &amp;quot;aliyun&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &amp;quot;aliyun&amp;quot;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &amp;quot;accessKeyId&amp;quot;: &amp;quot;&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &amp;quot;accessKeySecret&amp;quot;: &amp;quot;&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &amp;quot;bucket&amp;quot;: &amp;quot;&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &amp;quot;area&amp;quot;: &amp;quot;&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &amp;quot;path&amp;quot;: &amp;quot;&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &amp;quot;customUrl&amp;quot;: &amp;quot;&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &amp;quot;options&amp;quot;: &amp;quot;&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;quot;picgoPlugins&amp;quot;: &amp;#123;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;gt;&amp;#125;	&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023153936337.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023153936337.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023153936337&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023153841771.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023153841771.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023153841771&#34;&gt;&lt;/p&gt;
+&lt;p&gt;参考链接：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV12t4y147Gs/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=9c91ecd867532073046598f6a8b42c64&#34;&gt;2022 年 Typora+PicGo + 阿里云 OSS 服务配置图床保姆级教程_哔哩哔哩_bilibili&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/140004372&#34;&gt;手把手教你实现图片如何自动上传到图床！- 知乎 (zhihu.com)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ghigher1026.gitee.io/2022/07/18/typora%E4%B8%ADPicGo-Core%E6%8F%92%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8/&#34;&gt;typora 中 PicGo-Core 插件的使用 | GHigher’s Blog (gitee.io)&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://moyu-123.github.io/2022/10/20/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/</guid>
+            <title>目标检测</title>
+            <link>http://moyu-123.github.io/2022/10/20/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/</link>
+            <category>深度学习</category>
+            <category>yolo</category>
+            <category>目标检测</category>
+            <pubDate>Thu, 20 Oct 2022 18:49:27 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;目标检测&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#目标检测&#34;&gt;#&lt;/a&gt; 目标检测&lt;/h1&gt;
+&lt;h2 id=&#34;了解目标检测算法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#了解目标检测算法&#34;&gt;#&lt;/a&gt; 了解目标检测算法&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV15w411Z7LG/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=9c91ecd867532073046598f6a8b42c64&#34;&gt;YOLO v1 介绍&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/av586369215/?zw&amp;amp;vd_source=9c91ecd867532073046598f6a8b42c64&#34;&gt;目标检测算法概念及 YOLO 介绍&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1tf4y1t7ru/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=9c91ecd867532073046598f6a8b42c64&#34;&gt;YOLO v5 开源项目&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;视频学习笔记&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#视频学习笔记&#34;&gt;#&lt;/a&gt; 视频学习笔记&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221026192919397.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221026192919397.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221026192919397&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023160740035.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023160740035.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023160740035&#34;&gt;&lt;br&gt;
+ 语义分割：将像素类别输出出来，不区分不同物体&lt;br&gt;
+实例分割：区分同一类别不同物体像素&lt;br&gt;
+&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023160819386.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023160819386.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023160819386&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;模型简介&lt;/p&gt;
+&lt;p&gt;R-CNN：&lt;br&gt;
+先框出候选框，再将候选逐一喂入卷积神经网络，进行处理（很慢但准确性高）&lt;/p&gt;
+&lt;p&gt;FAST-RCNN：&lt;br&gt;
+先将图像喂入卷积神经网络获得共享特征，所有候选框共享一套特征（较快）&lt;/p&gt;
+&lt;p&gt;YOLO：&lt;br&gt;
+单阶段模型，将图片输入模型，模型给出结果，一步到位。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;YOLO v1&lt;/p&gt;
+&lt;p&gt;预测阶段：输入未知图片进入模型进行预测&lt;br&gt;
+&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023160850732.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023160850732.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023160850732&#34;&gt;&lt;br&gt;
+ 输入图像，得到 7 * 7 * 30 的张量，其中包含所有预测框的坐标、置信度、类别结果。解析张量即可得到预测结果。&lt;br&gt;
+&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023161032832.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023161032832.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023161032832&#34;&gt;&lt;/p&gt;
+&lt;p&gt;预测阶段后处理：&lt;br&gt;
+将预测框筛选过滤，将重复的预测框去掉只保留一个，将 7 * 7 * 30 的张量变为最后的结果。处理方法：NMS 非极大值抑制。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023161109864.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023161109864.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023161109864&#34;&gt;&lt;br&gt;
+ 训练阶段：&lt;br&gt;
+&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023161151693.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023161151693.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023161151693&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://moyu-123.github.io/2022/10/19/nfc%E4%B8%AA%E4%BA%BA%E5%90%8D%E7%89%87%E5%88%B6%E4%BD%9C/</guid>
+            <title>nfc个人名片制作</title>
+            <link>http://moyu-123.github.io/2022/10/19/nfc%E4%B8%AA%E4%BA%BA%E5%90%8D%E7%89%87%E5%88%B6%E4%BD%9C/</link>
+            <category>nfc</category>
+            <pubDate>Wed, 19 Oct 2022 19:10:32 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;基于nfc的个人名片设计&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基于nfc的个人名片设计&#34;&gt;#&lt;/a&gt; 基于 NFC 的个人名片设计&lt;/h1&gt;
+&lt;h2 id=&#34;简单介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#简单介绍&#34;&gt;#&lt;/a&gt; 简单介绍：&lt;/h2&gt;
+&lt;p&gt;想做一个 nfc 个人名片&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NFC：NFC 是 Near Field Communication 的简称，中文全称为近场通信技术，是一种新兴的技术，使用了 NFC 技术的设备（例如移动电话）可以在彼此靠近的情况下进行数据交换。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NFC 原理：电磁感应现象，NFC 的发生和接收设备形成了类似空芯变压器，数据接收设备（读取）是初级线圈，NFC 卡片就是次级线圈，而且 NFC 芯片工作电压也是从磁场中获取。（简单理解为磁生电，变化的磁场产生电流。）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PBC 设计：需要一些的画电路板的知识，了解原理图。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;基本组成：线圈、芯片、led、电阻、电容&lt;/li&gt;
+&lt;li&gt;画图推荐：嘉立创（每月白嫖两次样板）&lt;/li&gt;
+&lt;li&gt;成品参考：&lt;a href=&#34;https://oshwhub.com/explore&#34;&gt;嘉立创开源广场&lt;/a&gt;里面有一些大神的成品，可以在此基础上进行设计。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;制作：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;样板免费打印：&lt;a href=&#34;https://www.jlc.com/portal/appDownloadsWithConfig.html&#34;&gt;嘉立创下单助手&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;其他元件某宝购买。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://moyu-123.github.io/2022/10/19/ROS%E6%B7%B1%E5%BA%A6%E7%9B%B8%E6%9C%BA/</guid>
+            <title>ROS使用深度相机</title>
+            <link>http://moyu-123.github.io/2022/10/19/ROS%E6%B7%B1%E5%BA%A6%E7%9B%B8%E6%9C%BA/</link>
+            <category>ROS</category>
+            <category>Linux</category>
+            <category>深度相机</category>
+            <pubDate>Wed, 19 Oct 2022 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;52-使用realsense相机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#52-使用realsense相机&#34;&gt;#&lt;/a&gt; 5.2 使用 RealSense 相机&lt;/h2&gt;
+&lt;h3 id=&#34;521-安装realsensesdk&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#521-安装realsensesdk&#34;&gt;#&lt;/a&gt; 5.2.1 安装 RealSenseSDK&lt;/h3&gt;
+&lt;p&gt;安装 realsenseSDK 用于调整深度相机参数（包括亮度、曝光、白平衡等）&lt;/p&gt;
+&lt;p&gt;安装方法一（通过命令行安装）：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/Microsoft/vcpkg.git
+cd vcpkg
+./bootstrap-vcpkg.sh
+./vcpkg integrate install
+./vcpkg install realsense2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;安装方法二（已有安装包，通过安装包安装）：&lt;/p&gt;
+&lt;h3 id=&#34;522-安装realsense2_camera&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#522-安装realsense2_camera&#34;&gt;#&lt;/a&gt; 5.2.2 安装 realsense2_camera&lt;/h3&gt;
+&lt;p&gt;方法一：&lt;br&gt;
+ubuntu 下&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install ros-$ROS_DISTRO-realsense2-camera
+sudo apt-get install ros-$ROS_DISTRO-realsense2-description
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;详细 ros 版本要依据自己的更改，如 Ubuntu20.04 即为：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install ros-noetic-realsense2-camera
+sudo apt-get install ros-noetic-realsense2-description
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;方法二：&lt;/p&gt;
+&lt;p&gt;一、安装 sdk（参考 5.2.1）&lt;/p&gt;
+&lt;p&gt;二、安装 ros 包&lt;/p&gt;
+&lt;p&gt;新建工作空间&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/src/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;克隆到 src 文件夹下&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/IntelRealSense/realsense-ros.git
+cd realsense-ros/
+git checkout `git tag | sort -V | grep -P &amp;quot;^2.\d+\.\d+&amp;quot; | tail -1`
+cd ..
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;初始化工作空间&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;catkin_init_workspace
+cd ..
+catkin_make clean
+catkin_make -DCATKIN_ENABLE_TESTING=False -DCMAKE_BUILD_TYPE=Release
+catkin_make install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;配置环境变量&lt;/p&gt;
+&lt;p&gt;bash&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;echo &amp;quot;source ~/catkin_ws/devel/setup.bash&amp;quot; &amp;gt;&amp;gt; ~/.bashrc
+source ~/.bashrc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;zsh&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;echo &amp;quot;source ~/catkin_ws/devel/setup.zsh&amp;quot; &amp;gt;&amp;gt; ~/.zshrc
+source ~/.zshrc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;523-试运行ros节点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#523-试运行ros节点&#34;&gt;#&lt;/a&gt; 5.2.3 试运行 ros 节点&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;roslaunch realsense2_camera rs_camera.launch
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;524-参考链接&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#524-参考链接&#34;&gt;#&lt;/a&gt; 5.2.4 参考链接&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/IntelRealSense/realsense-ros&#34;&gt;https://github.com/IntelRealSense/realsense-ros&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/IntelRealSense/librealsense&#34;&gt;https://github.com/IntelRealSense/librealsense&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://moyu-123.github.io/2022/10/17/%E5%9F%BA%E4%BA%8Egithub%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+            <title>基于github建立个人博客</title>
+            <link>http://moyu-123.github.io/2022/10/17/%E5%9F%BA%E4%BA%8Egithub%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+            <category>hexo</category>
+            <category>nodejs</category>
+            <pubDate>Mon, 17 Oct 2022 21:05:17 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;基于github建立个人博客&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基于github建立个人博客&#34;&gt;#&lt;/a&gt; 基于 github 建立个人博客&lt;/h1&gt;
+&lt;h2 id=&#34;建立个人博客&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#建立个人博客&#34;&gt;#&lt;/a&gt; 建立个人博客&lt;/h2&gt;
+&lt;p&gt;推荐 b 站视频：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1mU4y1j72n/?spm_id_from=333.1007.top_right_bar_window_default_collection.content.click&amp;amp;vd_source=9c91ecd867532073046598f6a8b42c64&#34;&gt;https://www.bilibili.com/video/BV1mU4y1j72n/?spm_id_from=333.1007.top_right_bar_window_default_collection.content.click&amp;amp;vd_source=9c91ecd867532073046598f6a8b42c64&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;有其他视频教程也可&lt;/p&gt;
+&lt;h2 id=&#34;更换主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#更换主题&#34;&gt;#&lt;/a&gt; 更换主题&lt;/h2&gt;
+&lt;p&gt;主题网站：&lt;br&gt;
+&lt;a href=&#34;https://hexo.io/themes/&#34;&gt;https://hexo.io/themes/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;遇到的问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#遇到的问题&#34;&gt;#&lt;/a&gt; 遇到的问题&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在搭建博客时遇到报错&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162401131.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162401131.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023162401131&#34;&gt;&lt;br&gt;
+ 解决方法：&lt;br&gt;
+&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162426759.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162426759.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023162426759&#34;&gt; (其中 moyu 为 yourname，邮箱更换为自己的邮箱)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建 hexo 时报错&lt;br&gt;
+&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162453830.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162453830.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023162453830&#34;&gt;&lt;br&gt;
+ 错误原因一般是 yml 文件中有重复项，需检查并去掉&lt;br&gt;
+&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162513019.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162513019.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023162513019&#34;&gt;&lt;br&gt;
+ 参考链接：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_43423781/article/details/118892741&#34;&gt;https://blog.csdn.net/weixin_43423781/article/details/118892741&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;hexo 生成静态网址时报错&lt;/p&gt;
+&lt;blockquote&gt;&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;bash：hexo：command not found
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;原因是 nodejs 环境没有配置好&lt;br&gt;
+参考链接：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/qq_36759224/article/details/100411949&#34;&gt;https://blog.csdn.net/qq_36759224/article/details/100411949&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;若 nodejs 版本太低也会遇到问题&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/strawberry_x/article/details/113648770&#34;&gt;nodejs 卸载教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_43411585/article/details/105338333&#34;&gt;nodejs 安装教程&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;hexo 报错&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;error:spawn failed
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;解决方法：&lt;br&gt;
+删除.deploy_git 文件夹&lt;br&gt;
+输入&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git config --global core.autocrlf false
+hexo clean
+hexo g
+hexo d
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://moyu-123.github.io/2022/10/17/ROS%E4%BD%BF%E7%94%A8%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE/</guid>
+            <title>ROS使用激光雷达</title>
+            <link>http://moyu-123.github.io/2022/10/17/ROS%E4%BD%BF%E7%94%A8%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE/</link>
+            <category>ROS</category>
+            <category>Linux</category>
+            <category>激光雷达</category>
+            <pubDate>Mon, 17 Oct 2022 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;51-使用激光雷达&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#51-使用激光雷达&#34;&gt;#&lt;/a&gt; 5.1 使用激光雷达&lt;/h2&gt;
+&lt;h3 id=&#34;511-建立工作空间并编译或使用现有工作空间&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#511-建立工作空间并编译或使用现有工作空间&#34;&gt;#&lt;/a&gt; 5.1.1 建立工作空间并编译（或使用现有工作空间）&lt;/h3&gt;
+&lt;p&gt;建立工作空间&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mkdir -p ~/Autobot_ws/src
+cd ~/Autobot_ws/src
+git clone https://github.com/robopeak/rplidar_ros.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;返回上级包编译&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd ..
+catkin_make
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;添加环境变量 zsh 下&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;source /Autobot_ws/devel/setup.zsh
+
+或通过~/.zshrc设置环境（建议使用）
+
+echo “source ~/Autobot_ws/devel/setup.zsh” &amp;gt;&amp;gt; ~/.zshrc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;512-配置端口&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#512-配置端口&#34;&gt;#&lt;/a&gt; 5.1.2 配置端口&lt;/h3&gt;
+&lt;p&gt;查看端口权限&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ls -l /dev |grep ttyUSB
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;赋予端口权限&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo chmod a+rw /dev/ttyUSB0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;513-运行测试&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#513-运行测试&#34;&gt;#&lt;/a&gt; 5.1.3 运行测试&lt;/h3&gt;
+&lt;p&gt;打开 roscore (roslaunch 运行也会打开 roscore)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;roscore
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;打开新的终端运行 rplidar 和 rviz&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd ~/Autobot_ws
+source ./devel/setup.zsh
+roslaunch rplidar_ros view_rplidar.launch
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;成功运行图片&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162621266.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162621266.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023162621266&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;514-参考链接&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#514-参考链接&#34;&gt;#&lt;/a&gt; 5.1.4 参考链接&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/robopeak/rplidar_ros&#34;&gt;https://github.com/robopeak/rplidar_ros&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/BAIFOL/article/details/122633384?ops_request_misc=&amp;amp;request_id=&amp;amp;biz_id=102&amp;amp;utm_term=ROS%E4%BD%BF%E7%94%A8%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE&amp;amp;utm_medium=distribute.pc_search_result.none-task-blog-2&#34;&gt;https://blog.csdn.net/BAIFOL/article/details/122633384?ops_request_misc=&amp;amp;request_id=&amp;amp;biz_id=102&amp;amp;utm_term=ROS 使用激光雷达 &amp;amp; utm_medium=distribute.pc_search_result.none-task-blog-2&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;515-遇到问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#515-遇到问题&#34;&gt;#&lt;/a&gt; 5.1.5 遇到问题&lt;/h3&gt;
+&lt;p&gt;编译报错&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;error: ‘CV_LOAD_IMAGE_COLOR’ was not declared in this scope
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;解决方法&lt;/p&gt;
+&lt;p&gt;在报错文件中添加头文件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;quot;opencv2/imgcodecs/legacy/constants_c.h&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;编译成功&lt;/p&gt;
+&lt;p&gt;参考链接：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/CxC2333/article/details/107848500?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522166048313116782248511821%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;amp;request_id=166048313116782248511821&amp;amp;biz_id=0&amp;amp;utm_medium=distribute.pc_search_result.none-task-blog-2&#34;&gt;https://blog.csdn.net/CxC2333/article/details/107848500?ops_request_misc=%7B%22request%5Fid%22%3A%22166048313116782248511821%22%2C%22scm%22%3A%2220140713.130102334..%22%7D&amp;amp;request_id=166048313116782248511821&amp;amp;biz_id=0&amp;amp;utm_medium=distribute.pc_search_result.none-task-blog-2&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://moyu-123.github.io/2022/10/17/%E8%B7%AF%E7%94%B1%E5%99%A8%E6%90%AD%E5%BB%BA%E7%A7%81%E6%9C%89%E4%BA%91/</guid>
+            <title>路由器搭建私有云</title>
+            <link>http://moyu-123.github.io/2022/10/17/%E8%B7%AF%E7%94%B1%E5%99%A8%E6%90%AD%E5%BB%BA%E7%A7%81%E6%9C%89%E4%BA%91/</link>
+            <category>私有云</category>
+            <category>路由器</category>
+            <pubDate>Mon, 17 Oct 2022 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;路由器搭建私有云&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#路由器搭建私有云&#34;&gt;#&lt;/a&gt; 路由器搭建私有云&lt;/h1&gt;
+&lt;h2 id=&#34;1路由器设置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1路由器设置&#34;&gt;#&lt;/a&gt; 1. 路由器设置&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;连接路由器 WiFi&lt;/p&gt;
+&lt;p&gt;WiFi 密码：42878742&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打开路由器网址&lt;/p&gt;
+&lt;p&gt;浏览器网址输入&lt;/p&gt;
+&lt;p&gt;192.168.1.1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;登录&lt;/p&gt;
+&lt;p&gt;用户名：admin&lt;br&gt;
+ 密码：admin&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;路由器设置&lt;/p&gt;
+&lt;p&gt;Guest Network—Storage Sharing&lt;br&gt;
+User Account Management 设置访问权限&lt;br&gt;
+&lt;img src=&#34;../img/8.jpg&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;../img/8.jpg&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+初始密码为 guest&lt;br&gt;
+&lt;img src=&#34;../img/9.jpg&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;../img/9.jpg&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+save 后 back 退出&lt;br&gt;
+ Service Status—start&lt;br&gt;
+Add New Folder to Share&lt;br&gt;
+&lt;img src=&#34;../img/10.jpg&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;../img/10.jpg&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+ 选择其中一个盘，进行设置（以 volume 10 为例）&lt;br&gt;
+&lt;img src=&#34;../img/11.jpg&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;../img/11.jpg&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;USB Settings—Storage sharing—Service Sharing—Service Status 选择 start（保证状态为 started），Shared 选择 Disable&lt;br&gt;
+&lt;img src=&#34;../img/12.jpg&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;../img/12.jpg&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;电脑连接私有云&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#电脑连接私有云&#34;&gt;#&lt;/a&gt; 电脑连接私有云&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;win + R&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;输入&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; \\192.168.1.1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;大概率报错如下（未报错跳过此步）&lt;br&gt;
+&lt;img src=&#34;../img/13.jpg&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;../img/13.jpg&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+在 “控制面板” — “程序” — “程序和功能”—“启用或关闭 window 功能”&lt;br&gt;
+&lt;img src=&#34;../img/14.jpg&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;../img/14.jpg&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将 SMB1.0 选项勾选&lt;br&gt;
+&lt;img src=&#34;../img/15.jpg&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;../img/15.jpg&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+点击确定，进行重启&lt;br&gt;
+&lt;img src=&#34;../img/16.jpg&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;../img/16.jpg&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;重启后再次连接网络&lt;/p&gt;
+&lt;p&gt;win + R&lt;/p&gt;
+&lt;p&gt;输入&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; \\192.168.1.1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;弹出窗口&lt;br&gt;
+&lt;img src=&#34;picture%5C17.jpg&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;picture%5C17.jpg&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+用户名：admin&lt;br&gt;
+ 密码：admin&lt;/p&gt;
+&lt;p&gt;点击确定&lt;/p&gt;
+&lt;p&gt;成功进行私有云连接&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://moyu-123.github.io/2022/10/13/hello-world/</guid>
+            <title>Hello World</title>
+            <link>http://moyu-123.github.io/2022/10/13/hello-world/</link>
+            <pubDate>Thu, 13 Oct 2022 19:19:36 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
+&lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo new &lt;span class=&#34;string&#34;&gt;&amp;quot;My New Post&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/writing.html&#34;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;run-server&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#run-server&#34;&gt;#&lt;/a&gt; Run server&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/server.html&#34;&gt;Server&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;generate-static-files&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#generate-static-files&#34;&gt;#&lt;/a&gt; Generate static files&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/generating.html&#34;&gt;Generating&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/one-command-deployment.html&#34;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

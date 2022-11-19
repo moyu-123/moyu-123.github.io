@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Moyu&#39;s Blog • Posts by &#34;系统&#34; category</title>
+        <link>http://moyu-123.github.io</link>
+        <description>捷径是最大的弯路。</description>
+        <language>zh-CN</language>
+        <pubDate>Sat, 19 Nov 2022 21:53:49 +0800</pubDate>
+        <lastBuildDate>Sat, 19 Nov 2022 21:53:49 +0800</lastBuildDate>
+        <category>nfc</category>
+        <category>ROS</category>
+        <category>Linux</category>
+        <category>深度相机</category>
+        <category>激光雷达</category>
+        <category>ansys</category>
+        <category>typora</category>
+        <category>OSS</category>
+        <category>office</category>
+        <category>hexo</category>
+        <category>nodejs</category>
+        <category>更改用户名</category>
+        <category>arduino</category>
+        <category>ros</category>
+        <category>深度学习</category>
+        <category>yolo</category>
+        <category>目标检测</category>
+        <category>私有云</category>
+        <category>路由器</category>
+        <item>
+            <guid isPermalink="true">http://moyu-123.github.io/2022/11/19/word%E6%97%A0%E6%B3%95%E5%88%9B%E5%BB%BA%E5%B7%A5%E4%BD%9C%E6%96%87%E4%BB%B6/</guid>
+            <title>word无法创建工作文件</title>
+            <link>http://moyu-123.github.io/2022/11/19/word%E6%97%A0%E6%B3%95%E5%88%9B%E5%BB%BA%E5%B7%A5%E4%BD%9C%E6%96%87%E4%BB%B6/</link>
+            <category>office</category>
+            <pubDate>Sat, 19 Nov 2022 21:53:49 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;word无法创建工作文件请检查临时环境变量的解决方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#word无法创建工作文件请检查临时环境变量的解决方法&#34;&gt;#&lt;/a&gt; word 无法创建工作文件，请检查临时环境变量的解决方法&lt;/h1&gt;
+&lt;h2 id=&#34;1问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1问题&#34;&gt;#&lt;/a&gt; 1. 问题&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119215708055.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119215708055.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221119215708055&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2解决方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2解决方法&#34;&gt;#&lt;/a&gt; 2. 解决方法&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;新建一个文件夹（我在 E 盘新建一个 TempFile 文件夹，路径：E:\TempFile），作为临时文件储存点。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;更改环境变量（四处）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119220147158.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119220147158.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221119220147158&#34;&gt;&lt;/p&gt;
+&lt;p&gt;更改如图四个环境变量为之前设置的文件夹路径&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;更改注册表（两处）&lt;/p&gt;
+&lt;p&gt;第一处&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119220653328.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119220653328.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221119220653328&#34;&gt;&lt;/p&gt;
+&lt;p&gt;查看当前用户&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119221508569.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119221508569.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221119221508569&#34;&gt;&lt;/p&gt;
+&lt;p&gt;第二处（根据所查到的用户名信息调整路径）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119221118575.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221119221118575.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221119221118575&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://moyu-123.github.io/2022/11/10/win11%E6%9B%B4%E6%94%B9%E7%94%A8%E6%88%B7%E5%90%8D/</guid>
+            <title>win11更改用户名</title>
+            <link>http://moyu-123.github.io/2022/11/10/win11%E6%9B%B4%E6%94%B9%E7%94%A8%E6%88%B7%E5%90%8D/</link>
+            <category>更改用户名</category>
+            <pubDate>Thu, 10 Nov 2022 21:10:29 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;更改用户名&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#更改用户名&#34;&gt;#&lt;/a&gt; 更改用户名&lt;/h1&gt;
+&lt;h2 id=&#34;1创建还原点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1创建还原点&#34;&gt;#&lt;/a&gt; 1. 创建还原点&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221110211425369.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221110211425369.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221110211425369&#34;&gt;&lt;/p&gt;
+&lt;p&gt;启用系统保护，调整使用量，创建还原点。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221110212408502.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221110212408502.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221110212408502&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;注：要清除之前的还原点，可以禁用 c 盘系统保护，则删除所有盘还原点。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2更换用户名&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2更换用户名&#34;&gt;#&lt;/a&gt; 2. 更换用户名&lt;/h2&gt;
+&lt;p&gt;更换用户名可自行寻找网上教程，也可参照&lt;a href=&#34;https://zhuanlan.zhihu.com/p/440768641&#34;&gt; win11 修改用户名（超详细图文） - 知乎 (zhihu.com)&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

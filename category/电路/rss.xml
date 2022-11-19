@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Moyu&#39;s Blog • Posts by &#34;电路&#34; category</title>
+        <link>http://moyu-123.github.io</link>
+        <description>捷径是最大的弯路。</description>
+        <language>zh-CN</language>
+        <pubDate>Wed, 19 Oct 2022 19:10:32 +0800</pubDate>
+        <lastBuildDate>Wed, 19 Oct 2022 19:10:32 +0800</lastBuildDate>
+        <category>nfc</category>
+        <category>ROS</category>
+        <category>Linux</category>
+        <category>深度相机</category>
+        <category>激光雷达</category>
+        <category>ansys</category>
+        <category>typora</category>
+        <category>OSS</category>
+        <category>office</category>
+        <category>hexo</category>
+        <category>nodejs</category>
+        <category>更改用户名</category>
+        <category>arduino</category>
+        <category>ros</category>
+        <category>深度学习</category>
+        <category>yolo</category>
+        <category>目标检测</category>
+        <category>私有云</category>
+        <category>路由器</category>
+        <item>
+            <guid isPermalink="true">http://moyu-123.github.io/2022/10/19/nfc%E4%B8%AA%E4%BA%BA%E5%90%8D%E7%89%87%E5%88%B6%E4%BD%9C/</guid>
+            <title>nfc个人名片制作</title>
+            <link>http://moyu-123.github.io/2022/10/19/nfc%E4%B8%AA%E4%BA%BA%E5%90%8D%E7%89%87%E5%88%B6%E4%BD%9C/</link>
+            <category>nfc</category>
+            <pubDate>Wed, 19 Oct 2022 19:10:32 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;基于nfc的个人名片设计&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基于nfc的个人名片设计&#34;&gt;#&lt;/a&gt; 基于 NFC 的个人名片设计&lt;/h1&gt;
+&lt;h2 id=&#34;简单介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#简单介绍&#34;&gt;#&lt;/a&gt; 简单介绍：&lt;/h2&gt;
+&lt;p&gt;想做一个 nfc 个人名片&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;NFC：NFC 是 Near Field Communication 的简称，中文全称为近场通信技术，是一种新兴的技术，使用了 NFC 技术的设备（例如移动电话）可以在彼此靠近的情况下进行数据交换。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NFC 原理：电磁感应现象，NFC 的发生和接收设备形成了类似空芯变压器，数据接收设备（读取）是初级线圈，NFC 卡片就是次级线圈，而且 NFC 芯片工作电压也是从磁场中获取。（简单理解为磁生电，变化的磁场产生电流。）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PBC 设计：需要一些的画电路板的知识，了解原理图。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;基本组成：线圈、芯片、led、电阻、电容&lt;/li&gt;
+&lt;li&gt;画图推荐：嘉立创（每月白嫖两次样板）&lt;/li&gt;
+&lt;li&gt;成品参考：&lt;a href=&#34;https://oshwhub.com/explore&#34;&gt;嘉立创开源广场&lt;/a&gt;里面有一些大神的成品，可以在此基础上进行设计。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;制作：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;样板免费打印：&lt;a href=&#34;https://www.jlc.com/portal/appDownloadsWithConfig.html&#34;&gt;嘉立创下单助手&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;其他元件某宝购买。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Moyu&#39;s Blog • Posts by &#34;hexo&#34; tag</title>
+        <link>http://moyu-123.github.io</link>
+        <description>捷径是最大的弯路。</description>
+        <language>zh-CN</language>
+        <pubDate>Mon, 17 Oct 2022 21:05:17 +0800</pubDate>
+        <lastBuildDate>Mon, 17 Oct 2022 21:05:17 +0800</lastBuildDate>
+        <category>nfc</category>
+        <category>ROS</category>
+        <category>Linux</category>
+        <category>深度相机</category>
+        <category>激光雷达</category>
+        <category>ansys</category>
+        <category>typora</category>
+        <category>OSS</category>
+        <category>office</category>
+        <category>hexo</category>
+        <category>nodejs</category>
+        <category>更改用户名</category>
+        <category>arduino</category>
+        <category>ros</category>
+        <category>深度学习</category>
+        <category>yolo</category>
+        <category>目标检测</category>
+        <category>私有云</category>
+        <category>路由器</category>
+        <item>
+            <guid isPermalink="true">http://moyu-123.github.io/2022/10/17/%E5%9F%BA%E4%BA%8Egithub%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+            <title>基于github建立个人博客</title>
+            <link>http://moyu-123.github.io/2022/10/17/%E5%9F%BA%E4%BA%8Egithub%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+            <category>hexo</category>
+            <category>nodejs</category>
+            <pubDate>Mon, 17 Oct 2022 21:05:17 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;基于github建立个人博客&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基于github建立个人博客&#34;&gt;#&lt;/a&gt; 基于 github 建立个人博客&lt;/h1&gt;
+&lt;h2 id=&#34;建立个人博客&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#建立个人博客&#34;&gt;#&lt;/a&gt; 建立个人博客&lt;/h2&gt;
+&lt;p&gt;推荐 b 站视频：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1mU4y1j72n/?spm_id_from=333.1007.top_right_bar_window_default_collection.content.click&amp;amp;vd_source=9c91ecd867532073046598f6a8b42c64&#34;&gt;https://www.bilibili.com/video/BV1mU4y1j72n/?spm_id_from=333.1007.top_right_bar_window_default_collection.content.click&amp;amp;vd_source=9c91ecd867532073046598f6a8b42c64&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;有其他视频教程也可&lt;/p&gt;
+&lt;h2 id=&#34;更换主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#更换主题&#34;&gt;#&lt;/a&gt; 更换主题&lt;/h2&gt;
+&lt;p&gt;主题网站：&lt;br&gt;
+&lt;a href=&#34;https://hexo.io/themes/&#34;&gt;https://hexo.io/themes/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;遇到的问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#遇到的问题&#34;&gt;#&lt;/a&gt; 遇到的问题&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在搭建博客时遇到报错&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162401131.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162401131.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023162401131&#34;&gt;&lt;br&gt;
+ 解决方法：&lt;br&gt;
+&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162426759.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162426759.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023162426759&#34;&gt; (其中 moyu 为 yourname，邮箱更换为自己的邮箱)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建 hexo 时报错&lt;br&gt;
+&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162453830.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162453830.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023162453830&#34;&gt;&lt;br&gt;
+ 错误原因一般是 yml 文件中有重复项，需检查并去掉&lt;br&gt;
+&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162513019.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023162513019.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023162513019&#34;&gt;&lt;br&gt;
+ 参考链接：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_43423781/article/details/118892741&#34;&gt;https://blog.csdn.net/weixin_43423781/article/details/118892741&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;hexo 生成静态网址时报错&lt;/p&gt;
+&lt;blockquote&gt;&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;bash：hexo：command not found
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;原因是 nodejs 环境没有配置好&lt;br&gt;
+参考链接：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/qq_36759224/article/details/100411949&#34;&gt;https://blog.csdn.net/qq_36759224/article/details/100411949&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;若 nodejs 版本太低也会遇到问题&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/strawberry_x/article/details/113648770&#34;&gt;nodejs 卸载教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_43411585/article/details/105338333&#34;&gt;nodejs 安装教程&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;hexo 报错&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;error:spawn failed
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;解决方法：&lt;br&gt;
+删除.deploy_git 文件夹&lt;br&gt;
+输入&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git config --global core.autocrlf false
+hexo clean
+hexo g
+hexo d
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://moyu-123.github.io</id>
+    <title>Moyu&#39;s Blog • Posts by &#34;深度相机&#34; tag</title>
+    <link href="http://moyu-123.github.io" />
+    <updated>2022-10-18T16:00:00.000Z</updated>
+    <category term="nfc" />
+    <category term="ROS" />
+    <category term="Linux" />
+    <category term="深度相机" />
+    <category term="激光雷达" />
+    <category term="ansys" />
+    <category term="typora" />
+    <category term="OSS" />
+    <category term="office" />
+    <category term="hexo" />
+    <category term="nodejs" />
+    <category term="更改用户名" />
+    <category term="arduino" />
+    <category term="ros" />
+    <category term="深度学习" />
+    <category term="yolo" />
+    <category term="目标检测" />
+    <category term="私有云" />
+    <category term="路由器" />
+    <entry>
+        <id>http://moyu-123.github.io/2022/10/19/ROS%E6%B7%B1%E5%BA%A6%E7%9B%B8%E6%9C%BA/</id>
+        <title>ROS使用深度相机</title>
+        <link rel="alternate" href="http://moyu-123.github.io/2022/10/19/ROS%E6%B7%B1%E5%BA%A6%E7%9B%B8%E6%9C%BA/"/>
+        <content type="html">&lt;h2 id=&#34;52-使用realsense相机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#52-使用realsense相机&#34;&gt;#&lt;/a&gt; 5.2 使用 RealSense 相机&lt;/h2&gt;
+&lt;h3 id=&#34;521-安装realsensesdk&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#521-安装realsensesdk&#34;&gt;#&lt;/a&gt; 5.2.1 安装 RealSenseSDK&lt;/h3&gt;
+&lt;p&gt;安装 realsenseSDK 用于调整深度相机参数（包括亮度、曝光、白平衡等）&lt;/p&gt;
+&lt;p&gt;安装方法一（通过命令行安装）：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/Microsoft/vcpkg.git
+cd vcpkg
+./bootstrap-vcpkg.sh
+./vcpkg integrate install
+./vcpkg install realsense2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;安装方法二（已有安装包，通过安装包安装）：&lt;/p&gt;
+&lt;h3 id=&#34;522-安装realsense2_camera&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#522-安装realsense2_camera&#34;&gt;#&lt;/a&gt; 5.2.2 安装 realsense2_camera&lt;/h3&gt;
+&lt;p&gt;方法一：&lt;br&gt;
+ubuntu 下&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install ros-$ROS_DISTRO-realsense2-camera
+sudo apt-get install ros-$ROS_DISTRO-realsense2-description
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;详细 ros 版本要依据自己的更改，如 Ubuntu20.04 即为：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get install ros-noetic-realsense2-camera
+sudo apt-get install ros-noetic-realsense2-description
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;方法二：&lt;/p&gt;
+&lt;p&gt;一、安装 sdk（参考 5.2.1）&lt;/p&gt;
+&lt;p&gt;二、安装 ros 包&lt;/p&gt;
+&lt;p&gt;新建工作空间&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/src/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;克隆到 src 文件夹下&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/IntelRealSense/realsense-ros.git
+cd realsense-ros/
+git checkout `git tag | sort -V | grep -P &amp;quot;^2.\d+\.\d+&amp;quot; | tail -1`
+cd ..
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;初始化工作空间&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;catkin_init_workspace
+cd ..
+catkin_make clean
+catkin_make -DCATKIN_ENABLE_TESTING=False -DCMAKE_BUILD_TYPE=Release
+catkin_make install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;配置环境变量&lt;/p&gt;
+&lt;p&gt;bash&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;echo &amp;quot;source ~/catkin_ws/devel/setup.bash&amp;quot; &amp;gt;&amp;gt; ~/.bashrc
+source ~/.bashrc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;zsh&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;echo &amp;quot;source ~/catkin_ws/devel/setup.zsh&amp;quot; &amp;gt;&amp;gt; ~/.zshrc
+source ~/.zshrc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;523-试运行ros节点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#523-试运行ros节点&#34;&gt;#&lt;/a&gt; 5.2.3 试运行 ros 节点&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;roslaunch realsense2_camera rs_camera.launch
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;524-参考链接&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#524-参考链接&#34;&gt;#&lt;/a&gt; 5.2.4 参考链接&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/IntelRealSense/realsense-ros&#34;&gt;https://github.com/IntelRealSense/realsense-ros&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/IntelRealSense/librealsense&#34;&gt;https://github.com/IntelRealSense/librealsense&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="ROS" />
+        <category term="Linux" />
+        <category term="深度相机" />
+        <updated>2022-10-18T16:00:00.000Z</updated>
+    </entry>
+</feed>

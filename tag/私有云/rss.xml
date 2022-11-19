@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Moyu&#39;s Blog • Posts by &#34;私有云&#34; tag</title>
+        <link>http://moyu-123.github.io</link>
+        <description>捷径是最大的弯路。</description>
+        <language>zh-CN</language>
+        <pubDate>Mon, 17 Oct 2022 00:00:00 +0800</pubDate>
+        <lastBuildDate>Mon, 17 Oct 2022 00:00:00 +0800</lastBuildDate>
+        <category>nfc</category>
+        <category>ROS</category>
+        <category>Linux</category>
+        <category>深度相机</category>
+        <category>激光雷达</category>
+        <category>ansys</category>
+        <category>typora</category>
+        <category>OSS</category>
+        <category>office</category>
+        <category>hexo</category>
+        <category>nodejs</category>
+        <category>更改用户名</category>
+        <category>arduino</category>
+        <category>ros</category>
+        <category>深度学习</category>
+        <category>yolo</category>
+        <category>目标检测</category>
+        <category>私有云</category>
+        <category>路由器</category>
+        <item>
+            <guid isPermalink="true">http://moyu-123.github.io/2022/10/17/%E8%B7%AF%E7%94%B1%E5%99%A8%E6%90%AD%E5%BB%BA%E7%A7%81%E6%9C%89%E4%BA%91/</guid>
+            <title>路由器搭建私有云</title>
+            <link>http://moyu-123.github.io/2022/10/17/%E8%B7%AF%E7%94%B1%E5%99%A8%E6%90%AD%E5%BB%BA%E7%A7%81%E6%9C%89%E4%BA%91/</link>
+            <category>私有云</category>
+            <category>路由器</category>
+            <pubDate>Mon, 17 Oct 2022 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;路由器搭建私有云&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#路由器搭建私有云&#34;&gt;#&lt;/a&gt; 路由器搭建私有云&lt;/h1&gt;
+&lt;h2 id=&#34;1路由器设置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1路由器设置&#34;&gt;#&lt;/a&gt; 1. 路由器设置&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;连接路由器 WiFi&lt;/p&gt;
+&lt;p&gt;WiFi 密码：42878742&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打开路由器网址&lt;/p&gt;
+&lt;p&gt;浏览器网址输入&lt;/p&gt;
+&lt;p&gt;192.168.1.1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;登录&lt;/p&gt;
+&lt;p&gt;用户名：admin&lt;br&gt;
+ 密码：admin&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;路由器设置&lt;/p&gt;
+&lt;p&gt;Guest Network—Storage Sharing&lt;br&gt;
+User Account Management 设置访问权限&lt;br&gt;
+&lt;img src=&#34;../img/8.jpg&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;../img/8.jpg&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+初始密码为 guest&lt;br&gt;
+&lt;img src=&#34;../img/9.jpg&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;../img/9.jpg&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+save 后 back 退出&lt;br&gt;
+ Service Status—start&lt;br&gt;
+Add New Folder to Share&lt;br&gt;
+&lt;img src=&#34;../img/10.jpg&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;../img/10.jpg&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+ 选择其中一个盘，进行设置（以 volume 10 为例）&lt;br&gt;
+&lt;img src=&#34;../img/11.jpg&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;../img/11.jpg&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;USB Settings—Storage sharing—Service Sharing—Service Status 选择 start（保证状态为 started），Shared 选择 Disable&lt;br&gt;
+&lt;img src=&#34;../img/12.jpg&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;../img/12.jpg&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;电脑连接私有云&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#电脑连接私有云&#34;&gt;#&lt;/a&gt; 电脑连接私有云&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;win + R&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;输入&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; \\192.168.1.1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;大概率报错如下（未报错跳过此步）&lt;br&gt;
+&lt;img src=&#34;../img/13.jpg&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;../img/13.jpg&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+在 “控制面板” — “程序” — “程序和功能”—“启用或关闭 window 功能”&lt;br&gt;
+&lt;img src=&#34;../img/14.jpg&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;../img/14.jpg&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将 SMB1.0 选项勾选&lt;br&gt;
+&lt;img src=&#34;../img/15.jpg&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;../img/15.jpg&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+点击确定，进行重启&lt;br&gt;
+&lt;img src=&#34;../img/16.jpg&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;../img/16.jpg&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;重启后再次连接网络&lt;/p&gt;
+&lt;p&gt;win + R&lt;/p&gt;
+&lt;p&gt;输入&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; \\192.168.1.1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;弹出窗口&lt;br&gt;
+&lt;img src=&#34;picture%5C17.jpg&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;picture%5C17.jpg&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+用户名：admin&lt;br&gt;
+ 密码：admin&lt;/p&gt;
+&lt;p&gt;点击确定&lt;/p&gt;
+&lt;p&gt;成功进行私有云连接&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

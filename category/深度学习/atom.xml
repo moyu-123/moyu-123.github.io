@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://moyu-123.github.io</id>
+    <title>Moyu&#39;s Blog • Posts by &#34;深度学习&#34; category</title>
+    <link href="http://moyu-123.github.io" />
+    <updated>2022-10-20T10:49:27.000Z</updated>
+    <category term="nfc" />
+    <category term="ROS" />
+    <category term="Linux" />
+    <category term="深度相机" />
+    <category term="激光雷达" />
+    <category term="ansys" />
+    <category term="typora" />
+    <category term="OSS" />
+    <category term="office" />
+    <category term="hexo" />
+    <category term="nodejs" />
+    <category term="更改用户名" />
+    <category term="arduino" />
+    <category term="ros" />
+    <category term="深度学习" />
+    <category term="yolo" />
+    <category term="目标检测" />
+    <category term="私有云" />
+    <category term="路由器" />
+    <entry>
+        <id>http://moyu-123.github.io/2022/10/20/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/</id>
+        <title>目标检测</title>
+        <link rel="alternate" href="http://moyu-123.github.io/2022/10/20/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/"/>
+        <content type="html">&lt;h1 id=&#34;目标检测&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#目标检测&#34;&gt;#&lt;/a&gt; 目标检测&lt;/h1&gt;
+&lt;h2 id=&#34;了解目标检测算法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#了解目标检测算法&#34;&gt;#&lt;/a&gt; 了解目标检测算法&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV15w411Z7LG/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=9c91ecd867532073046598f6a8b42c64&#34;&gt;YOLO v1 介绍&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/av586369215/?zw&amp;amp;vd_source=9c91ecd867532073046598f6a8b42c64&#34;&gt;目标检测算法概念及 YOLO 介绍&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1tf4y1t7ru/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=9c91ecd867532073046598f6a8b42c64&#34;&gt;YOLO v5 开源项目&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;视频学习笔记&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#视频学习笔记&#34;&gt;#&lt;/a&gt; 视频学习笔记&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221026192919397.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221026192919397.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221026192919397&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023160740035.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023160740035.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023160740035&#34;&gt;&lt;br&gt;
+ 语义分割：将像素类别输出出来，不区分不同物体&lt;br&gt;
+实例分割：区分同一类别不同物体像素&lt;br&gt;
+&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023160819386.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023160819386.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023160819386&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;模型简介&lt;/p&gt;
+&lt;p&gt;R-CNN：&lt;br&gt;
+先框出候选框，再将候选逐一喂入卷积神经网络，进行处理（很慢但准确性高）&lt;/p&gt;
+&lt;p&gt;FAST-RCNN：&lt;br&gt;
+先将图像喂入卷积神经网络获得共享特征，所有候选框共享一套特征（较快）&lt;/p&gt;
+&lt;p&gt;YOLO：&lt;br&gt;
+单阶段模型，将图片输入模型，模型给出结果，一步到位。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;YOLO v1&lt;/p&gt;
+&lt;p&gt;预测阶段：输入未知图片进入模型进行预测&lt;br&gt;
+&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023160850732.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023160850732.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023160850732&#34;&gt;&lt;br&gt;
+ 输入图像，得到 7 * 7 * 30 的张量，其中包含所有预测框的坐标、置信度、类别结果。解析张量即可得到预测结果。&lt;br&gt;
+&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023161032832.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023161032832.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023161032832&#34;&gt;&lt;/p&gt;
+&lt;p&gt;预测阶段后处理：&lt;br&gt;
+将预测框筛选过滤，将重复的预测框去掉只保留一个，将 7 * 7 * 30 的张量变为最后的结果。处理方法：NMS 非极大值抑制。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023161109864.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023161109864.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023161109864&#34;&gt;&lt;br&gt;
+ 训练阶段：&lt;br&gt;
+&lt;img src=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023161151693.png&#34; class=&#34;lazyload placeholder&#34; data-srcset=&#34;https://picture1-for-typora.oss-cn-qingdao.aliyuncs.com/img_for_typora/image-20221023161151693.png&#34; srcset=&#34;https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp&#34; alt=&#34;image-20221023161151693&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="深度学习" />
+        <category term="yolo" />
+        <category term="目标检测" />
+        <updated>2022-10-20T10:49:27.000Z</updated>
+    </entry>
+</feed>
